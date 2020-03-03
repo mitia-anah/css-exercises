@@ -1,6 +1,6 @@
 /* 1 = Select everything in the document */
 * {
-  all: initial;
+  fill: unset;
 }
 
 
@@ -71,7 +71,7 @@ p.hidden {
 
 
 /* 12 = Select all form elements that have a method attribute set to `POST` */
-*[target="_post"] {
+*[att="post"] {
   box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 }
 
