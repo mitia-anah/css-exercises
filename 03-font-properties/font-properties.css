@@ -1,8 +1,82 @@
 * {
-/*
-  Property name
-  Property description
-*/
-  /* Property example with a value */
+/* Property name and property description */
+font: defines a variety of font properties
+font-family: defines the font for the text.
+font-size: defines the font size for the text.
+font-weight: specify the font weight of the text.
+font-style: defines the font style for the text.
+line-height: traces the height between lines of the text.
 
+/* Property name and property description */
+font-variant: specify the font variant.
+font-stretch: expands the font of the text to become bigger or wider.
+font-size-adjust: keeps the readability of the text.
+font-synthesis:
+letter-spacing:
+word-spacing:
+text-align:
+text-decoration:
+
+
+
+
+/* Property example with a value */
+
+}
+.font-family {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font-size{
+  font: x-large;
+}
+.font-weight{
+  font-weight: bold;
+}
+.font-style{
+  font-style: italic;
+}
+.line-height{
+  line-height: 0em;
+}
+
+.font-variant{
+  font-variant: small-caps;
+}
+.font-stretch{
+  font-stretch: narrower;
+}
+.font-size-adjust{
+  font-size-adjust: initial;
+}
+.font-synthesis{
+  font-synthesis: style;
+}
+.letter-spacing{
+  letter-spacing: normal;
+}
+.word-spacing{
+  word-spacing: 0em;
+}
+.text-align{
+  text-align: center;
+}
+
+.text-decoration-line{
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: cyan;
+}
+
+.text-indent {
+  text-indent: 0em;
+}
+.text-transform {
+  text-transform: lowercase;
+}
+.vertical-align {
+  vertical-align: middle;
+}
+.white-space {
+  white-space: normal;
+}
 }
