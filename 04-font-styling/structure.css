@@ -1,0 +1,83 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin-block-start: 4rem;
+  margin-inline-end: 2rem;
+  margin-block-end: 4rem;
+  margin-inline-start: 2rem;
+  font-family: sans-serif;
+  line-height: 1.25;
+}
+
+body > header,
+body > nav {
+  border-bottom: 1px solid #ccc;
+}
+
+body > header h1 {
+  line-height: 1;
+}
+
+body > nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+body > nav a:hover {
+  text-decoration: none;
+}
+
+.example {
+  padding: 2rem 2rem 2rem 5rem;
+  background-color: rgba(0,0,0,.025);
+}
+
+section + section {
+  margin-block-start: 4rem;
+}
+
+.example :is(h1, h2, h3, h4, h5, h6, p) {
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.example > ::before {
+  position: absolute;
+  left: -4rem;
+  top: 0.25rem;
+  font-size: 0.75rem;
+  color: #999;
+  font-family: monospace;
+}
+
+.example h1::before {
+  content: 'h1';
+}
+.example h2::before {
+  content: 'h2';
+}
+.example h3::before {
+  content: 'h3';
+}
+.example h4::before {
+  content: 'h4';
+}
+.example h5::before {
+  content: 'h5';
+}
+.example h6::before {
+  content: 'h6';
+}
+.example p::before {
+  content: 'p';
+}
+.example .intro::before {
+  content: '.intro';
+}
+.example p:last-child::before {
+  content: 'small';
+}
