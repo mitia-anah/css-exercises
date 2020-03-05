@@ -55,26 +55,26 @@
 }
 
 /* sans serif */
-#section_sans_serif * {
+#section_sans_serif >* {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* serif */
-#section_serif *{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#section_serif >*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* monaspace */
-#section_monospace *{
-  font-family: 'Times New Roman', Times, serif;
+#section_monospace >*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* fantasy */
-#section_fantasy *{
+#section_fantasy >*{
   font-family: fantasy;
 }
 
 /* cursive */
-#section_cursive *{
+#section_cursive >*{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
