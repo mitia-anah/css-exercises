@@ -9,24 +9,24 @@ line-height: traces the height between lines of the text.
 
 /* Property name and property description */
 font-variant: specify the font variant.
-font-stretch: expands the font of the text to become bigger or wider.
+font-stretch: expands the font of the text to become narrower or wider.
 font-size-adjust: keeps the readability of the text.
 font-synthesis: provides font style for the text.
 letter-spacing: specifies the maximum or minimum of the space between every letter.
 word-spacing: specifies the maximum or minimum of the space between every word.
 text-align: places the text in proper position.
-text-decoration: decorates the text to be attractive.
+text-decoration: decorates the text with underline. .
 
 /* propety name and property description */
 text-decoration-line: adds decoration for the line.
 text-decoration-style: adds decoration style for the text.
-text-decoration-color: beautifier the text with colour.
+text-decoration-color: beautifier the text with colour to be more attractive.
 
 /* property name and property description */
-text-indent: sets the text in proper order.
-text-transform: changes the form of the text into another way.
+text-indent: sets the text in proper order or recognise how much space do we need.
+text-transform: changes the form of the text into another way such as uppercase, lowercase or none.
 vertical-align: affects the text to be in vertical position.
-white-space: specifies the blank areas of the page.
+white-space: specifies the blank areas of the page. HTML does not support the white space, so we need this to control the white space behaviour.
 
 
 /* Property example with a value */
@@ -49,7 +49,7 @@ white-space: specifies the blank areas of the page.
 }
 
 .font-variant{
-  font-variant: small-caps;
+  font-variant: normal;
 }
 .font-stretch{
   font-stretch: narrower;
