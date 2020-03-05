@@ -11,13 +11,22 @@ line-height: traces the height between lines of the text.
 font-variant: specify the font variant.
 font-stretch: expands the font of the text to become bigger or wider.
 font-size-adjust: keeps the readability of the text.
-font-synthesis:
-letter-spacing:
-word-spacing:
-text-align:
-text-decoration:
+font-synthesis: provides font style for the text.
+letter-spacing: specifies the maximum or minimum of the space between every letter.
+word-spacing: specifies the maximum or minimum of the space between every word.
+text-align: places the text in proper position.
+text-decoration: decorates the text to be attractive.
 
+/* propety name and property description */
+text-decoration-line: adds decoration for the line.
+text-decoration-style: adds decoration style for the text.
+text-decoration-color: beautifier the text with colour.
 
+/* proprty name and property description */
+text-indent: sets the text in proper order.
+text-transform: changes the form of the text into another way.
+vertical-align: affects the text to be in vertical position.
+white-space: specifies the blank areas of the page.
 
 
 /* Property example with a value */
