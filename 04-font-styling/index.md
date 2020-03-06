@@ -22,7 +22,7 @@ In other words, if none of the other fonts specficied are available, then the br
 
 ## The exercise
 
-In `fonts.html`, you'll notice there are 6 sections, each with the same HTML for `h1`-`h6`, and three different sizes of paragraphs. Each section is concerned with each fallback font.
+In `fonts.html`, you'll notice there are 3 sections, each with the same HTML for `h1`-`h6`, and three different sizes of paragraphs. Each section is concerned with each fallback font.
 
 **Can you describe what each fallback font is?**
 
