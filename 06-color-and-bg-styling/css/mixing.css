@@ -1,0 +1,29 @@
+/* section Dory */
+
+#section_dory {
+  background-color: turquoise;
+  background-image: url('../images/coral-reef.png'),
+                    url('../images/bubble.png');
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+/*section henry */
+.henry{
+  background-color:lightyellow;
+  background-image: url('../images/sun.png'),
+                    url('../images/grass-left.png'),
+                    url('../images/grass-clump.png.png');
+  background-position: top right, bottom, center, 40%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+/*section lu-seal */
+.lu-seal{
+  background-color: rgba(100, 80, 255, 0.25);
+  background-image: url('../images/beach-ball.png');
+  background-position: middle left;
+  background-repeat: no-repeat;
+  background-size: 15%;
+}
