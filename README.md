@@ -15,4 +15,5 @@ A list of practical exercises to use as we learn CSS.
 - [03: Font Properties](03-font-properties/index.md)
 - [04: Font styling](04-font-styling/index.md)
 - [05: Colour and background properties](05-color-and-backgrounds/index.md)
+- [06: Mixing colours and background](06-color-and-bg-styling/index.md)
 
