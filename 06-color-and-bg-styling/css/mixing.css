@@ -3,27 +3,37 @@
 #section_dory {
   background-color: turquoise;
   background-image: url('../images/coral-reef.png'),
-                    url('../images/bubble.png');
-  background-position: center;
-  background-repeat: repeat-x;
+                    url('../images/bubble.png'),
+                    url('../images/crab.png');
+  background-size:70%, 20%, 10%;
+  background-position: center, top right, bottom left;
+  background-repeat: repeat-x, repeat-y, no-repeat;
 }
 
 /*section henry */
 .henry{
-  background-color:lightyellow;
+  background-color: lightblue;
+  background-image: linear-gradient( lightskyblue, green, lightgreen);
   background-image: url('../images/sun.png'),
+                    url('../images/grass-clump.png'),
                     url('../images/grass-left.png'),
-                    url('../images/grass-clump.png.png');
-  background-position: top right, bottom, center, 40%;
-  background-repeat: no-repeat;
-  background-size: 20%;
+                    url('../images/grass-tile.png'),
+                    url('../images/big-bird.png');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 20%, 80%, 80rem, 20rem 60rem, 30%;
+  background-position: top right, center, bottom, right bottom, bottom left;
 }
+
 
 /*section lu-seal */
 .lu-seal{
-  background-color: rgba(100, 80, 255, 0.25);
-  background-image: url('../images/beach-ball.png');
-  background-position: middle left;
-  background-repeat: no-repeat;
-  background-size: 15%;
+  background-color: rgba(4, 109, 224, 0.25);
+  background-image: url('../images/beach-ball.png'),
+                    url('../images/palm-2.png'),
+                    url('../images/sun.png'),
+                    url('../images/palm.png'),
+                    url('../images/lu-seal.png');
+  background-position: center left, bottom right, top right, bottom left,center bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 15%, 40%, 30%, 40%, 20%;
 }
