@@ -1,18 +1,55 @@
-* {
-/*
-  Property name
-  Property description
-*/
-  /* Property example with a value */
+/* Opacity sets how opaque an element is. Which means how fully transparent the element is.The opacity property sets the opacity level for an element. The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent*/
+Example
+div {
+  opacity: 0.5;
 }
 
+/* The display property specifies the display behavior (the type of rendering box) of an element.*/
+Example
+body {
+  display: inline;
+}
+
+
+/* The visibility property specifies whether or not an element is visible.  It hides rows and columns of a table, and it also hides an element without changing the layout. visibility has four valid values: visible , hidden , collapse , and inherit. */
+Example
+h2.a {
+  visibility: visible;
+  visibility: hidden;
+  visibility: collapse
+}
+
+
 /*
-  Questions
+  Answers
   =======================
 
-  - What is the difference between `opacity` and a `background-color` that is semi-transparent?
-  - What is the difference between `display: none;` and `visibility: hidden;`?
-  - Why would we use `visibility: visible;`?
+/*The difference between `opacity` and a `background-color` that is semi-transparent
+  Opacity sets the opacity value for an element and all of its children;
+RGBA sets the opacity value only for a single declaration.*/
+
+
+/* The difference between `display: none;` and `visibility: hidden;
+display:none means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags. visibility:hidden means that unlike display:none , the tag is not visible, but space is allocated for it on the page.*/
+
+
+/*we use `visibility: visible;*/
 
 */
+
+
+/*This is an inline <span> element inside a paragraph.*/
+DISPLAY
+Examples of inline elements:
+
+<span>
+<a>
+<img>
+/*block*/
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
 
