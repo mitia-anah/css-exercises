@@ -1,28 +1,48 @@
 /* section Dory */
+div{
+  background-image: url('../images/coral-reef.png');
+}
 
+.reef{
+}
+
+#reef_1{
+  hei
+}
 #section_dory {
-  background-color: turquoise;
-  background-image: url('../images/coral-reef.png'),
+  background-image: url('../images/sun.png'),
+
+                    url('../images/coral-reef.png'),
                     url('../images/bubble.png'),
-                    url('../images/crab.png');
-  background-size:70%, 20%, 10%;
-  background-position: center, top right, bottom left;
-  background-repeat: repeat-x, repeat-y, no-repeat;
+                    url('../images/crab.png'),
+                    linear-gradient(180deg, rgba(22, 13 ,225) 0% 10%,rgb(223, 235, 10) 40% 60%S);
+  background-size: 10%, 30%, 50%, 2%, 10%;
+  background-position:0% 10%,
+                      10% 20%,
+                      40% 75%,
+                      73% 100%,
+                      100% ;
+  background-repeat:
+  no-repeat /*coral-reef*/
+  no-repeat /*coral reef*/
+  no-repeat /*bubble*/
+  no-repeat /*crabe*/
 }
 
 /*section henry */
 .henry{
-  background-color: lightblue;
-  background-image: linear-gradient( lightskyblue, green, lightgreen);
-  background-image: url('../images/sun.png'),
+  background-image: linear-gradient(180deg, lightblue 180%, green 180%),
+                    url('../images/sun.png'),
                     url('../images/grass-clump.png'),
-                    url('../images/grass-left.png'),
-                    url('../images/grass-tile.png'),
-                    url('../images/big-bird.png');
+                    url('../images/grass-left.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 20%, 80%, 80rem, 20rem 60rem, 30%;
-  background-position: top right, center, bottom, right bottom, bottom left;
-}
+  background-size: 100px;,
+                   normal,
+                   normal,
+
+  background-position:20% 30,
+                      40 80%,
+                      30% 20;             }
 
 
 /*section lu-seal */
