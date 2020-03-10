@@ -34,22 +34,3 @@ display:none means that the tag in question will not appear on the page at all (
 
 
 /*we use `visibility: visible;*/
-
-*/
-
-
-/*This is an inline <span> element inside a paragraph.*/
-DISPLAY
-Examples of inline elements:
-
-<span>
-<a>
-<img>
-/*block*/
-<h1> - <h6>
-<p>
-<form>
-<header>
-<footer>
-<section>
-
