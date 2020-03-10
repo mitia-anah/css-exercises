@@ -16,4 +16,7 @@ A list of practical exercises to use as we learn CSS.
 - [04: Font styling](04-font-styling/index.md)
 - [05: Colour and background properties](05-color-and-backgrounds/index.md)
 - [06: Mixing colours and background](06-color-and-bg-styling/index.md)
+- [06b: Extra background exercise](06b-more-exercises/index.md)
+- [07: Visibility](07-visibility/index.md)
+- [08: Visibility exercise](08-visibility-exercise/index.md)
 
