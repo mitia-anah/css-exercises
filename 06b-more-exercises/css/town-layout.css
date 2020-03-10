@@ -1,0 +1,160 @@
+@keyframes ltr {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: skewX(2deg);
+  }
+  50% {
+    transform: skewX(-2deg);
+  }
+  100% {
+    transform: skewX(2deg);
+  }
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  width: 320px;
+  height: 320px;
+  margin: 0;
+  border: #ccc solid 3px;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.plant {
+  animation: sway 3s ease-in-out infinite;
+  transform-origin: 50% 100%;
+  transform: skewX(3deg);
+}
+
+#sky {
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+
+#sun {
+  position: absolute;
+  bottom: 0;
+  right: 35px;
+  width: 80px;
+  height: 90px;
+}
+
+#cloud-1 {
+  top: 5px;
+  left: -100%;
+  animation: ltr 10s linear infinite;
+  animation-delay: 2s;
+}
+
+#cloud-2 {
+  top: 35px;
+  left: -100%;
+  animation: ltr 8s linear infinite;
+}
+
+#countryside {
+  position: relative;
+  height: 150px;
+}
+
+#town {
+  position: relative;
+  height: 120px;
+  z-index: 3;
+}
+
+#town > * {
+  position: absolute;
+}
+
+#house-1 {
+  bottom: 1px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+#house-2 {
+  bottom: 13px;
+  right: 70px;
+  width: 120px;
+  height: 120px;
+}
+
+#palm {
+  bottom: 14px;
+  right: 10px;
+  animation-delay: 1s;
+  width: 60px;
+  height: 60px;
+}
+
+#tree {
+  bottom: 14px;
+  left: 100px;
+  width: 70px;
+  height: 70px;
+}
+
+#town::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 14px;
+}
+
+#road {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  z-index: 4;
+}
+
+#road::after {
+  content: '';
+  border-top: dashed 3px black;
+  width: 100%;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#car {
+  position: absolute;
+  bottom: -15px;
+  left: -25%;
+  width: 200px;
+  height: 200px;
+  animation: ltr 3s ease-in-out infinite;
+}
