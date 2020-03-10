@@ -16,7 +16,6 @@ Example
 h2.a {
   visibility: visible;
   visibility: hidden;
-  visibility: collapse
 }
 
 
@@ -33,4 +32,4 @@ RGBA sets the opacity value only for a single declaration.*/
 display:none means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags. visibility:hidden means that unlike display:none , the tag is not visible, but space is allocated for it on the page.*/
 
 
-/*we use `visibility: visible;*/
+/*we use `visibility: visible to reverse the parent element that has been hidden before.*/

@@ -28,8 +28,8 @@ html {
 }
 
 body {
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   margin: 0;
   border: #ccc solid 3px;
   overflow: hidden;
@@ -91,9 +91,9 @@ body {
 
 #house-1 {
   bottom: 1px;
-  left: 20px;
-  width: 120px;
-  height: 120px;
+  left: 10px;
+  width: 140px;
+  height: 140px;
 }
 
 #house-2 {
@@ -107,15 +107,15 @@ body {
   bottom: 14px;
   right: 10px;
   animation-delay: 1s;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 
 #tree {
-  bottom: 14px;
+  bottom: 10px;
   left: 100px;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 #town::after {
@@ -132,7 +132,7 @@ body {
 #road {
   position: absolute;
   overflow: hidden;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
   right: 0;
   height: 40px;
@@ -154,7 +154,7 @@ body {
   position: absolute;
   bottom: -15px;
   left: -25%;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   animation: ltr 3s ease-in-out infinite;
 }

@@ -1,0 +1,80 @@
+.cloud {
+  background-image: url('../images/cloud.svg');
+  background-repeat: no-repeat;
+}
+
+.house {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.plant {
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: bottom;
+}
+
+
+#sky {
+  background-position: top;
+}
+
+#cloud-1 {
+  background-position: top right;
+  width: 50px;
+  height: 40px;
+}
+
+#cloud-2 {
+  align-items: top left;
+  background-size: 50% 46%;
+}
+
+#sun {
+  background-image: url('../images/sun.svg');
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+}
+
+#countryside {
+  background-size: cover;
+}
+
+#town {
+  background-position: inherit;
+
+}
+
+#house-1 {
+  background-image: url('../images/house-1.svg');
+  width: 90px;
+  height: 90px;
+  background-position: bottom;
+}
+
+#house-2 {
+  background-image: url('../images/house-2.svg');
+  background-size: 60% 60%;
+  background-position: bottom ;
+}
+
+#tree {
+  background-image: url('../images/tree.svg');
+  background-position: center;
+}
+
+#palm {
+  background-image: url('../images/palm-tree.svg');
+  background-position: left bottom;
+}
+#road{
+  background-size: 10% ;
+  background-position: bottom;
+}
+
+#car {
+  background-image: url('../images/car.svg');
+  width: 70px ;
+  height: 70px;
+}
