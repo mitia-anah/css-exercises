@@ -12,4 +12,20 @@ li:nth-of-type(2n+3) {
 }
 
 /* Display */
-tr:
+tr:nth-child(2n) {
+  display: none;
+}
+
+tr:last-child > td:nth-last-of-type(2n+1) {
+  display: none
+}
+
+span {
+  display: none;
+}
+
+/* opacity */
+span {
+  opacity: 0.5;
+}
+
