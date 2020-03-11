@@ -1,3 +1,12 @@
+/* nav li {
+  visbility: hidden;
+}
+nav li:first-child {
+  visibility: visible;
+}
+*/
+/*li=[href
+
 /* Visibility */
 li:first-child {
   visibility: visible;
