@@ -43,6 +43,7 @@ ul li {
 font-weight: 800;
 }
 
-p {
-
+ol li {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
 }
