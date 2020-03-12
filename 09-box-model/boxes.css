@@ -1,7 +1,48 @@
-* {
   /*
     Property name
     Property description
   */
     /* Property example with a value */
-  }
+
+/*box model */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 1rem;
+  font: 100%/1.25 Georgia, Garamond, sans-serif;
+  background-color: lightpink
+}
+
+header > h1 {
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(yellow, orange, white);
+}
+
+h2 {
+  font-style: oblique;
+  text-decoration: underline;
+}
+ header > h3, h4, h5 {
+   font-family: serif;
+   font-size: 30px;
+ }
+article {
+  text-align: start;
+}
+
+div {
+  background-image: url('./image/box.png');
+  background-position: right;
+  background-size: 70% 70%;
+}
+ul li {
+font-weight: 800;
+}
+
+p {
+
+}
