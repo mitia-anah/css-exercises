@@ -21,4 +21,5 @@ A list of practical exercises to use as we learn CSS.
 - [08: Visibility exercise](08-visibility-exercise/index.md)
 - [09: Box Model](09-box-model/index.md)
 - [10: Boxercising](10-boxing/index.md)
+- [11: Inheritance](11-inheritance/index.md)
 
