@@ -1,0 +1,56 @@
+body {
+  margin: 1rem;
+}
+header {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1rem;
+  margin-block-start: 1rem;
+}
+
+h1 {
+  border: 1rem solid;
+  padding: 1rem;
+  display: block;
+  margin-block-start: 1rem;
+}
+
+td:first-child {
+  padding-inline-end: 1rem;
+}
+
+tr:nth-child(1) span {
+  border-block-end: 1rem solid;
+}
+
+tr:nth-child(2) :nth-of-type(2){
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+td:nth-of-type(2) > span {
+  border-bottom: 1rem solid;
+
+}
+td:nth-of-type(3) {
+  padding-left: 1rem;
+}
+td:nth-of-type(3) > span {
+  border-bottom:  1rem solid;
+}
+
+
+table {
+  padding: 1rem;
+  margin: 0rem;
+  display: block;
+}
+
+footer {
+  padding: 1rem;
+  border: solid 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
