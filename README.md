@@ -19,4 +19,6 @@ A list of practical exercises to use as we learn CSS.
 - [06b: Extra background exercise](06b-more-exercises/index.md)
 - [07: Visibility](07-visibility/index.md)
 - [08: Visibility exercise](08-visibility-exercise/index.md)
+- [09: Box Model](09-box-model/index.md)
+- [10: Boxercising](10-boxing/index.md)
 
