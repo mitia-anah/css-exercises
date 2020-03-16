@@ -1,12 +1,40 @@
-.div a {
-  background-image: url('../images/icon-facebook.png');
-  position: absolute;
-}
-                    url('../images/icon-twitter.png'),
-                    url('../images/icon-github.png');
+/*
+width
+height
+border-radius
+margin
+layout
+no-repeat
+50% 50%
+background-size: content
+hide the text in an accessible way, replace with background
+*/
+/* This element is most likely an anchor.
+We use the `herf` of the anchor as the key to the source of the baackground image `url()`
+*/
+
+.icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 50px,
-                   50px,
-                   50px;
-                   background-position: center bottom;
+  background-size: contain;
+  display: inline-block;
+  text-indent: -9999px;
 }
+/* we use this */
+
+.icon[href^="https://facebook"] {
+  background-image: url('../images/icon-facebook.png');
+}
+
+.icon[href^="https://twiter"] {
+  background-image: url('../images/icon-twitter.png');
+}
+
+.icon[href^="https://github"] {
+  background-image: url('../images/icon-github.png');
+}
+
+

@@ -1,3 +1,31 @@
+/* Let the footer element maanage the spacing
+we'l be using `display:inline`*/
 footer {
-  background-position: center;
+  text-align: center;
+  padding-block-start: 6rem;
+  padding-block-end: 6rem;
+  border-block-start: 1px rgb(200, 200, 200) solid;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+footer > p {
+  color: black;
+  text-decoration: black;
+}
+
+/* Add margins to any list-item that isn't the first or last within the `ul`.*/
+footer li:not(:first-child):not(:last-child) {
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
+}
+footer p {
+  color: grey;
 }
