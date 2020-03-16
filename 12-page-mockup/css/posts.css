@@ -1,1 +1,10 @@
+.post {
+  display: none;
+  line-height: 1rem;
+}
 
+.post_1 {
+  font-weight: 700;
+  text-align: center center;
+
+}
