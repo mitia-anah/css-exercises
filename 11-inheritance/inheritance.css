@@ -1,15 +1,14 @@
 body {
   font-size: 16px;
-  font-family: monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body header > h1, h2, h3 {
+body > header > h1 {
   text-decoration: underline;
-}
-h1 {
   color: red;
   font-size: 4rem;
 }
-header h2 {
+
+
 
 }
