@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13: Generated content</title>
+    <style>
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      header h1,h2,h3  {
+        color: deeppink;
+        font-size: 50px;
+        padding-inline-start: 5rem;
+        background-color: white ;
+        text-shadow: lightpink 5px 5px  ;
+      }
+      main ol {
+        padding-inline-start: 4rem;
+      }
+      main > ol > li {
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-weight: 800;
+      }
+      .pseudo li {
+        color: red;
+      }
+
+    </style>
   </head>
   <body>
-    <section>
+    <section >
       <header>
           <h1>Pseudo element</h1>
       </header>
@@ -17,13 +41,13 @@
           <li>Function</li>
             <p>The functions that we can use in the content property is the <q>function-counter</q>.</p>
           <li>Various pseudo</li>
-            <ul>
-              <li> ::after<br><cite> Insert something after the content of an element</cite></li>
-              <li> ::before<br><cite>Insert something before the content of an element</cite></li>
-              <li> ::first-letter <br><cite>Selects the first letter of an element</cite> </li>
-              <li> ::first-line<br><cite>Selects the first line of an element
-              </cite></li>
-              <li> ::selection<br><cite>Selects the portion of an element that is selected by a user</cite></li>
+            <ul class="pseudo">
+              <li> ::after</li><cite> Insert something after the content of an element</cite>
+              <li> ::before</li><cite>Insert something before the content of an element</cite>
+              <li> ::first-letter </li><cite>Selects the first letter of an element</cite>
+              <li> ::first-line</li><cite>Selects the first line of an element
+              </cite>
+              <li> ::selection</li><cite>Selects the portion of an element that is selected by a user</cite>
             </ul>
           <li>The reason why we use the pseudo-element is that it allows us to define an element’s content which we want to pick from the hole part of our HTML. In other word, when we wan to style a single part of an element, we use this pseudo-element to make that work.</li>
         </ol>
@@ -37,8 +61,17 @@
       <main>
         <ol>
           <li></li>
+          <li></li>
+          <li>A CSS counter can be especially useful for making outlined lists, because a new instance of the counter is automatically created in child elements. </li>
         </ul>
     </main>
+    </section>
+    <section>
+      <header>
+        <h3>Lists</h3>
+        <p>There are some spesific properties and values tied to lists.</p>
+      </header>
+
     </section>
 
   </body>
