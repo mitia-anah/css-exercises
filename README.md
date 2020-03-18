@@ -22,4 +22,6 @@ A list of practical exercises to use as we learn CSS.
 - [09: Box Model](09-box-model/index.md)
 - [10: Boxercising](10-boxing/index.md)
 - [11: Inheritance](11-inheritance/index.md)
+- [12: Weekend project: Page mockup](12-page-mockup/index.md)
+- [13: Generated content, counters, and lists](13-generated-content/index.md)
 
