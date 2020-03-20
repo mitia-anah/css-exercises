@@ -19,43 +19,46 @@
     …
 */
 body {
-  counter-reset: number;
+  counter-reset: major-clause;
 }
 
 h3 {
-  counter-increment: number;
-  font-size: 2em;
-
+  counter-reset: clause ;
 }
 
 h3::before {
-  content: counter(number)".";
+  counter-increment: major-clause;
+  content: counter(major-clause)".";
 }
 
-
-
- h4 {
-  counter-increment: section;
+h4 {
+  counter-reset: clause;
 }
 
 h4::before {
-  content:counter(number)"." counter(section) ".";
+  counter-increment: clause;
+  content:  counter(major-clause)"." counter(clause)".";
  }
 
-section > ol > li::before {
-  content: counter(Major clause)".";
-  content: counter(Clause)".";
-  content: counter(List)".";
+h4 {
+  counter-reset: list;
 }
 
-ol {
-  counter-reset: section;
+ol > li::before {
+  counter-increment: list;
+  content: counter(major-clause)"."
+           counter(clause)"."
+           counter(list, lower-alpha)".";
 }
 
-li::before {
-  counter-increment: section;
-  content: counters(section) " ";
+ol ol {
+  counter-reset: nested-list;
 }
 
-
-
+ol > li > ol > li::before {
+  counter-increment: nested-list;
+  content: counter(major-clause)"."
+           counter(clause)"."
+           counter(list, lower-alpha)"."
+           counter(nested-list, lower-roman)".";
+}
