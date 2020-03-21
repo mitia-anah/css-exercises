@@ -24,4 +24,7 @@ A list of practical exercises to use as we learn CSS.
 - [11: Inheritance](11-inheritance/index.md)
 - [12: Weekend project: Page mockup](12-page-mockup/index.md)
 - [13: Generated content, counters, and lists](13-generated-content/index.md)
+- [14: Generating content and counters](14-generating-content/index.md)
+- [15: Table styles](15-table-styles/index.md)
+- [16: Creating table-like layouts](16-table-styling/index.md)
 
