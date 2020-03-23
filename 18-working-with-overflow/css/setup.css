@@ -1,0 +1,76 @@
+html {
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 2rem;
+}
+
+.examples {
+  display: flex;
+  flex-direction: row;
+}
+
+.example {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(223, 6, 93);
+  font-size: 4rem;
+  border: #ccc solid 1px;
+}
+
+.example * {
+  margin: 0;
+}
+
+.example + .example {
+  margin-left: 2rem;
+}
+
+
+.overflow img {
+  max-width: 300px;
+  height: auto;
+}
+
+.overflow .example {
+  flex-basis: auto;
+  width: 12rem;
+  height: 12rem;
+}
+
+.overflow .example.large {
+  width: 24rem;
+  height: 16rem;
+}
+
+.clipping img {
+  max-width: 600px;
+  height: auto;
+}
+
+.clipping .example {
+  width: 600px;
+  height: 600px;
+}
+
+#overclip .example {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+#overclip img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-block-start: -66px;
+  margin-inline-start: -310px;
+}
+
+.ellipsis .example {
+  width: 500px;
+  height: 72px;
+}

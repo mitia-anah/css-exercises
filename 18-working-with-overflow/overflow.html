@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow & Clipping</title>
+    <link rel="stylesheet" href="css/setup.css">
+    <link rel="stylesheet" href="css/overflow.css">
+  </head>
+  <body>
+    <section id="overflow_invisible" class="overflow">
+      <header>
+        <h2>Clipping</h2>
+        <p>Use the <code>overflow</code> property to clip any content</p>
+      </header>
+      <div class="examples">
+        <div class="example">
+          <p>CSS is awesome</p>
+        </div>
+        <div class="example">
+          <img src="images/peekaboo.png" alt>
+        </div>
+      </div>
+    </section>
+    <section id="overflow_scroll" class="overflow">
+      <header>
+        <h2>Scrolling</h2>
+        <p>Use the correct <code>overflow</code> value to create a scrollable area for the content, if applicable.</p>
+      </header>
+      <div class="examples">
+        <div class="example">
+          <p>CSS is awesome</p>
+        </div>
+        <div class="example">
+          <img src="images/peekaboo.png" alt>
+        </div>
+      </div>
+      <div class="examples">
+        <div class="example large">
+          <p>CSS is awesome</p>
+        </div>
+        <div class="example large">
+          <img src="images/peekaboo.png" alt>
+        </div>
+      </div>
+    </section>
+    <section id="clipping_circle" class="clipping">
+      <header>
+        <h2>Clipping</h2>
+        <p>Use the <code>circle()</code> <code>clip-path</code> value to isolate Dory's right eye</p>
+      </header>
+      <div class="example">
+        <img src="images/peekaboo.png" alt>
+      </div>
+    </section>
+    <section id="clipping_poly" class="clipping">
+      <header>
+        <h2>Clipping</h2>
+        <p>Use the <code>polygon()</code> <code>clip-path</code> value to isolate Dory's mouth</p>
+      </header>
+      <div class="example">
+        <img src="images/peekaboo.png" alt>
+      </div>
+    </section>
+    <section id="overclip" class="clipping">
+      <header>
+        <h2>Combination</h2>
+        <p>Use <code>clip-path</code> and <code>overflow</code> to isolate Dory's eye</p>
+      </header>
+      <div class="example">
+        <img src="images/peekaboo.png" alt>
+      </div>
+    </section>
+    <section id="overflow_ellipsis" class="ellipsis">
+      <header>
+        <h2>Text overflow</h2>
+        <p>Use <code>text-overflow</code> and the other properties you need for truncating text that is too long for the box.</p>
+      </header>
+      <div class="example">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, error laborum, dolor mollitia aut quidem quibusdam voluptatum perspiciatis illo vel in. Autem reiciendis ullam, modi commodi delectus facilis nostrum culpa.
+      </div>
+    </section>
+  </body>
+</html>
