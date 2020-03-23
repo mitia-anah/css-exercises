@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17: overflow</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Overflow and Clipping</h1>
+    <section>
+      <header>
+       <h2>1 <sup>st</sup> part</h2>
+      </header>
+      <p>Overflow css property allows us to control the contents to be fit in its block formatting content. See those properties and their default values bellow: </p>
+      <ul>
+        <li>Overflow: visible(default), hidden, scroll, auto</li>
+        <li>Clip: auto </li>
+        <li>Clip-path: none</li>
+        <li>Text-overflow: ellipsis</li>
+      </ul>
+      <p>It is very important to use the overflow property to control the content when it is too big to fit the box and we also can use clip property when we want to define what portion of an element is visible. Then we use the text-overflow to know how overflowed the content is. In addition, we also use the clip-path to specify a part of an element which we want to show. </p>
+      <p>Another properties which we need to be set before these properties are the overflow-y and overflow-x properties.</p>
+    </section>
+    <section>
+      <h2>2 <sup>nd</sup> part</h2>
+      <p>The browser's default way to handle contents that are larger than its container is `450pixel`</p>
+      <p>An ellipsis is a key word value to represent clipped text but the ellipse decrease the text displayed.</p>
+      <p>Text overflow can only work on block or inline-block level elements, because the element needs to have a width in order to be overflow-ed.</p>
+    </section>
+  </body>
+</html>
