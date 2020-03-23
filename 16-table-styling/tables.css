@@ -27,6 +27,8 @@ section p {
   padding: 1rem;
 }
 
-
+section {
+  display: table-row;
+}
 
 
