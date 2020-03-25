@@ -1,0 +1,29 @@
+/* max-width
+
+.example img {
+  max-width: 100vw;
+  max-height: 100vw;
+
+.example img[width][heigth] {
+   width: auto;
+   height: auto;
+*/
+
+/* use this instead (max-width) */
+.example img{
+   max-width: 100%;
+   height: auto;
+}
+
+/* When we put the value `auto` the browser will set the width and the height of the value.
+ In that case, we don't need to set the attribut value in HTML anymore.*/
+.table_container{
+  overflow: auto;
+}
+
+/* we use the viewport unit here */
+.example_svg {
+  max-height: 100vh;
+  max-width: 100vw;
+
+}
