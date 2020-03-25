@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Patterns</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Patterns</h1>
+    </header>
+
+    <section>
+      <header>
+        <h2>Icon buttons</h2>
+      </header>
+      <p>Icon on the left</p>
+      <div class="example">
+        <a href="https://facebook.com" class="icon icon_left">Facebook</a>
+      </div>
+      <p>Icon on the right</p>
+      <div class="example">
+        <a href="https://facebook.com" class="icon icon_right">Facebook</a>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Checkbox-driven dropdown</h2>
+        <p>If we use a checkbox to store the state of the dropdown, and tapping a label associated with that checkbox toggles that open or closed state, then we just need a way to show and hide the dropdown contents based on the checkbox state.</p>
+      </header>
+      <div class="example">
+        <div class="dropdown">
+          <input type="checkbox" id="dropdown_checkbox">
+          <label for="dropdown_checkbox" class="dropdown_trigger">
+            About us
+          </label>
+          <div class="dropdown_contents">
+            <ul>
+              <li><a href="#/about/who-we-are">Who we are</a></li>
+              <li><a href="#/about/how-we-started">How we started</a></li>
+              <li><a href="#/about/dreams">Our dreams</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Breadcrumbs</h2>
+        <p>Often a user will have navigated deep within a website, so it's good to leave a breadcrumb trail for the user that'll help them to find their way back.</p>
+      </header>
+      <div class="example">
+        <nav class="breadcrumb">
+          <ol>
+            <li><a href="#/"><span class="a11y">Go back to: </span>Home</a></li>
+            <li><a href="#/about/"><span class="a11y">Go back to: </span>About us</a></li>
+            <li><span class="a11y">You are here: </span><b>Our dreams</b></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>Progress indicator</h2>
+        <p>If the user is going to be completing a number of steps, it'll help them to list each of the steps, and set the right expectations.</p>
+      </header>
+      <div class="example">
+        <ol class="progress_indicator">
+          <li><a href="#/steps/1/"><span class="a11y">Go back to </span>Getting started</a></li>
+          <li><b><span class="a11y">You are here: </span>Edit your profile</b></li>
+          <li><span><span class="a11y">Up next: </span>Confirm your changes</span></li>
+          <li><span><span class="a11y">Fourth step: </span>Save</span></li>
+        </ol>
+      </div>
+    </section>
+
+  </body>
+</html>
