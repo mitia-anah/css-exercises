@@ -1,0 +1,17 @@
+html {
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 2rem;
+}
+
+.example {
+  border: 1px solid #ccc;
+}
+
+.example + .example {
+  margin: 2rem 0;
+}

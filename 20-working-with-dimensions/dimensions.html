@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dimensions</title>
+    <link rel="stylesheet" href="css/setup.css">
+    <link rel="stylesheet" href="css/dimensions.css">
+  </head>
+  <body>
+    <section>
+      <header>
+        <h2>Images should fit</h2>
+        <p>Set a <code>max-width</code> on <code>img</code> elements so that they fit within the viewport width.</p>
+        <p>Make sure the height is correct too.</p>
+      </header>
+      <!--
+        This example has three images, each with different width and height settings.
+        See if you can fix all three with only two properties.
+      -->
+      <div class="example">
+        <img src="../06-color-and-bg-styling/images/big-bird.png" alt="Henry, the handsomest Ostrich" width="1444" height="2400">
+      </div>
+      <div class="example">
+        <img src="../06-color-and-bg-styling/images/big-bird.png" alt="Henry, the handsomest Ostrich" width="722" height="1200">
+      </div>
+      <div class="example">
+        <img src="../06-color-and-bg-styling/images/big-bird.png" alt="Henry, the handsomest Ostrich">
+      </div>
+    </section>
+    <section>
+      <header>
+        <h2>Avoid unnecessary wrapping</h2>
+        <p>Sometimes we'll want to preserve whitespace, and the number of linebreaks in something like a table.</p>
+        <p>In other words, we don't want the text to wrap too much. Use a <code>min-width</code> property to control this in a table.</p>
+        <p>But, we still want the content to be visible if the viewport is too small, right? What can we do to fix that? <!-- hint: it requires something you've learned in a previous exercise --></p>
+      </header>
+      <div class="example">
+        <div class="table_container">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Characteristic</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Name</th>
+                <td>Henry</td>
+              </tr>
+              <tr>
+                <th scope="row">Species</th>
+                <td>Ostrich</td>
+              </tr>
+              <tr>
+                <th scope="row">Location</th>
+                <td>Grassy plains of southern Africa</td>
+              </tr>
+              <tr>
+                <th scope="row">Weight</th>
+                <td>A gentleman never tells</td>
+              </tr>
+              <tr>
+                <th scope="row">Height</th>
+                <td><abbr title="Two point one meters">2.1m</abbr> to <abbr title="Two point eight meters">2.8m</abbr></td>
+              </tr>
+              <tr>
+                <th scope="row">Top speed</th>
+                <td><abbr title="Seventy kilometers per hour">70km/h</abbr></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h2>Screen-sizing</h2>
+        <p>Using CSS viewport units, make this SVG fit within the visible area of a screen's height, or width, whichever is smaller (so that the entire tree is visible at all times).</p>
+      </header>
+      <div class="example">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463">
+          <path d="M451 94c0-27-23-50-50-50a29 29 0 00-34-24 29 29 0 00-38-12 40 40 0 00-56 8 50 50 0 00-78 30c-12 0-22 5-29 14a50 50 0 00-67 14 35 35 0 00-49 37 55 55 0 00-25 88c7 8 15 13 24 16v3a30 30 0 0051 20 38 38 0 0037 0 50 50 0 0059 14l44 32a73 73 0 01-34 42 89 89 0 00-37 116l1 4h-52a9 9 0 000 17h222a9 9 0 000-17h-76a87 87 0 014-107 104 104 0 0024-70l37-27c17-1 32-12 38-27a44 44 0 0045-43 35 35 0 0024-43c10-9 15-21 15-35zM211 242l10-14a30 30 0 008-4c2 3 5 4 9 5l4 18 1 18-32-23zm44 86c-28 33-32 80-11 118h-55l-5-12c-16-34-3-75 30-93a89 89 0 0044-97l-3-14a30 30 0 007-4 87 87 0 01-7 102zm24-107l10-1c4 7 10 13 18 17l-17 13c-2-10-6-20-11-29zm142-101c-3 3-4 7-2 11l1 7c0 10-7 18-17 18a8 8 0 00-8 10v5a27 27 0 01-32 26 8 8 0 00-10 7 27 27 0 01-49 8c6-5 11-13 13-21 10 2 21 1 31-3a8 8 0 00-7-15c-9 3-19 3-28-1a9 9 0 00-12 8 23 23 0 01-32 22c-4-1-9 0-11 5a12 12 0 01-21 1 9 9 0 00-14-1l-5 4a12 12 0 01-17-9 9 9 0 00-13-6 33 33 0 01-31 4c-9-3-15-9-19-18a8 8 0 10-15 7 50 50 0 0066 26c3 5 7 9 13 11a33 33 0 01-55-4 8 8 0 00-14-2 21 21 0 01-29 0 9 9 0 00-14 3c-2 5-6 8-11 8a13 13 0 01-12-18 8 8 0 00-6-12 38 38 0 010-75 9 9 0 007-13l-2-8a18 18 0 0130-13 9 9 0 0013-3 33 33 0 0154-11 9 9 0 0014-3 18 18 0 0122-11 8 8 0 0011-8 33 33 0 0159-21 9 9 0 0015-3 23 23 0 0138-8c3 4 8 4 12 1a12 12 0 0120 7 9 9 0 0012 6l6-1a12 12 0 0112 15 9 9 0 0010 10l7-1a33 33 0 0120 59z"/>
+          <path d="M353 106l-3 1a37 37 0 00-54-13 37 37 0 00-54 5 51 51 0 00-64 54 9 9 0 0017-2 34 34 0 0148-34c4 2 9 0 11-4a20 20 0 0134-2 8 8 0 0014 1c2-3 5-5 8-6a20 20 0 0127 15 9 9 0 0014 5c2-2 5-4 9-5a9 9 0 00-7-15z"/>
+        </svg>
+      </div>
+    </section>
+  </body>
+</html>
