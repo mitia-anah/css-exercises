@@ -1,0 +1,36 @@
+a.icon.icon_left::before {
+  content:"";
+  background-image: url('../icon-facebook.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  background-position: left;
+}
+
+.icon {
+  display: inline-block;
+  border: 1px solid;
+  background-color: lightblue;
+  padding: 1rem;
+
+}
+a.icon .icon_left {
+  text-decoration: none;
+  font-size: 1rem;
+
+}
+
+a.icon.icon_right::after{
+  content:"";
+  background-image: url('../icon-facebook.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  background-position: right;
+}
+
+
