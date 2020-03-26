@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+}
+
+ul > li a {
+  text-decoration: none;
+}
+
+
+
+.dropdown_contents {
+  display: none;
+}
+
+.dropdown_trigger:after{
+  content: "▼";
+  color: blueviolet;
+}
+
+input[type="checkbox"]:checked ~ .dropdown_contents {
+  display: block;
+}
+
