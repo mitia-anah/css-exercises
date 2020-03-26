@@ -1,0 +1,58 @@
+.example:last-child {
+  width: 100%;
+  height: 100%;
+  padding-block-end: 5rem;
+  padding-inline-start: 1rem;
+}
+
+.progress_indicator li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.progress_indicator {
+  counter-reset: step ;
+}
+.progress_indicator li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  text-transform: lowercase;
+  color: purple;
+}
+
+.progress_indicator li::before {
+  width: 30px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 5px solid green;
+  display: block;
+  text-align: center;
+  margin: 0 auto 14px auto;
+  border-radius: 50%;
+  background-color: white
+}
+
+.progress_indicator li::after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: green;
+  top: 15px;
+  left: -50%;
+  z-index: -1
+}
+
+.progress_indicator li:first-child:after {
+  content: none;
+}
+.progress_indicator .a11y{
+  color: red;
+}
+

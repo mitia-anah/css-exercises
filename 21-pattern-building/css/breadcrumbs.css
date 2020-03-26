@@ -1,12 +1,22 @@
+.example {
+  background-image: radial-gradient();
+  max-width: auto;
+  max-height: auto;
+}
+
 .breadcrumb > ol  li{
   display: inline;
   list-style: none;
   margin-inline-end: 2rem;
 }
 
-li a {
+nav a {
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 900;
+  border: 1px solid;
+  padding: 1rem;
+  background-color:paleturquoise;
 }
 
 .breadcrumb li:not(:last-child)::after {
