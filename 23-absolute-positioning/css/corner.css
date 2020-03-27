@@ -1,0 +1,38 @@
+.container {
+  border: 1px solid;
+  border-color: lightgrey;
+  width: 200px;
+  height: 200px;
+
+}
+
+.container .circle{
+  position: static;
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding-block-start: 9.5rem;
+}
+
+.container .rect {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+}
+
+.container .pipe {
+  position: absolute;
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding-block-start: 9.5rem;
+}
+
+.container .bar {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  padding-inline-start: 10rem;
+  left: 25px;
+ }

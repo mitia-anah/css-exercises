@@ -1,1 +1,4 @@
-/* default value for postion = static ,(absolute, fix)
+/* -default value for postion = static ,(absolute, fix, relative, sticky)
+- top and  bottom properties are another properties
+ we need to supply when we use non-default position value.
+ -
