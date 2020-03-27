@@ -20,9 +20,29 @@ section + section {
   margin-block-start: 4rem;
 }
 
+.circle {
+  fill: royalblue;
+}
+
+.rect {
+  fill: green;
+}
+
+.pipe {
+  fill: red;
+}
+
+.bar {
+  fill: gold;
+}
+
+section header svg {
+  border: 1px solid #ccc;
+}
+
 .example {
   border: 1px solid #ccc;
-  padding: 2rem;
+  max-width: 200px;
 }
 
 .example + .example {

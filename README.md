@@ -33,3 +33,4 @@ A list of practical exercises to use as we learn CSS.
 - [20: Setting Dimensions](20-working-with-dimensions/index.md)
 - [21: Building patterns with pseudo-elements](21-pattern-building/index.md)
 - [22: Layouts using positioning](22-positioning/index.md)
+- [23: Absolute positioning](23-absolute-positioning/index.md)
