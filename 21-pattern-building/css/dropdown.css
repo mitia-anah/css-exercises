@@ -10,6 +10,15 @@ ul > li a {
   display: none;
 }
 
+#dropdown_checkbox {
+  width: 20px;
+  height: 20px;
+}
+.dropdown_trigger {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
 .dropdown_trigger:after{
   content: "▼";
   color: blueviolet;
