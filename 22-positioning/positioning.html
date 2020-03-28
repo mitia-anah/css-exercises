@@ -1,13 +1,46 @@
-<!DOCTYPE html>
+ e<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22: Positioning</title>
+    <link rel="stylesheet" href="positioning.css">
   </head>
   <body>
     <header>
       <h1>Positioning</h1>
     </header>
+    <main>
+      <h2>Position property</h2>
+      <p>Positioning is a layout-breaking form of layout. i.e. it pulls elements out of the normal flow, and one has to use known dimensions to account for these positioned elements.</p>
+      <p>the default value for Position is <i>STATIC</i>. </p>
+      <p>There are some other properties that we need to supply when using an non-default Position value, which are the :
+        <ul>
+          <li>top</li>
+          <li>Bottom</li>
+          <li>left</li>
+          <li>right</li>
+        </ul> </p>
+        <p>When a value of an element has been positioned, the inferred <q>display</q> value is <q>absolute.</q></p>
+        <p>The one of the non-default values for positioning ,which still maintains a box in the flow of the document is the <q>relative</q> value</p>
+        <p>The special about <q>fixed</q> and <q>sticky</q> is that:
+          <ul>
+            <li>sticky position can keep the content's normal flow size.</li>
+            <li>sticky position establishe a new containing block for absolutely positioned descendants</li>
+            <li>fixed positioned boxes do not move when the document is scrolled.</li>
+            <li>in fixed position the containing block is established by the viewport.</li>
+          </ul>
+        </p>
+        <p> What makes absolute positioned useful are:</p>
+           <ul>
+             <li>to specify position </li>
+             <li>to specify dimension</li>
+           </ul>
+        <p></p>
+        <p>The CSS's stacking contex is the <q>Z-attribute, which allows the user to render the order of layering of boxes.</q></p>
+    </main>
+
+
+    </main>
   </body>
 </html>

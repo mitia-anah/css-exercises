@@ -1,4 +1,39 @@
 /* -default value for postion = static ,(absolute, fix, relative, sticky)
 - top and  bottom properties are another properties
  we need to supply when we use non-default position value.
- -
+ -*/
+body {
+  counter-reset: major-clause;
+}
+
+h1 {
+  counter-reset: clause ;
+}
+
+ h1::before{
+  counter-increment: major-clause;
+  content: counter(major-clause)".";
+}
+
+h2 {
+  counter-reset: clause;
+}
+
+h2::before {
+  counter-increment: clause;
+  content:  counter(major-clause)"." counter(clause) " ";
+ }
+
+ul{
+  counter-reset: list;
+}
+
+ul > li::before {
+  counter-increment: list;
+  content: counter(major-clause)"."
+           counter(clause)"."
+           counter(list, lower-alpha)".";
+}
+li {
+  list-style: none;
+}
