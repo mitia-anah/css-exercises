@@ -11,7 +11,6 @@ section:nth-of-type(2) .container .circle:nth-child(1) {
   bottom: -50%;
   left: -50%;
   z-index: -1;
-
 }
 
 section:nth-of-type(2) .circle:nth-child(2){
@@ -20,7 +19,6 @@ section:nth-of-type(2) .circle:nth-child(2){
   top: -50%;
   left: -50%;
   z-index: -1;
-
 }
 
 section:nth-of-type(2) .circle:nth-child(3) {
@@ -29,7 +27,6 @@ section:nth-of-type(2) .circle:nth-child(3) {
   top: -50%;
   right: -50%;
   z-index: -1;
-
 }
 
 section:nth-of-type(2) .circle:nth-child(4) {
@@ -38,6 +35,4 @@ section:nth-of-type(2) .circle:nth-child(4) {
   bottom: -50%;
   right: -50%;
   z-index: -1;
-
-
 }
