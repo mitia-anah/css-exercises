@@ -7,29 +7,29 @@ section:nth-of-type(1) .container{
 section:nth-of-type(1) .container .circle {
   position: absolute;
   width: 25%;
-  bottom: -1px;
-  right: -1px;
+  bottom: 0%;
+  right: 0%;
 }
 
 section:nth-of-type(1) .container .rect {
   width: 25%;
   position: absolute;
-  top: -1px;
-  left: 0.1px;
+  top: 0%;
+  left: 0%;
 }
 
 
 section:nth-of-type(1) .container  .pipe {
   position: absolute;
   width: 25%;
-  bottom: -1px;
-  left: 1px;
+  bottom: 0%;
+  left: 0%;
 }
 
 section:nth-of-type(1) .container .bar {
   width: 25%;
   position: absolute;
-  top: 1px;
-  right: -1px;
+  top: 0%;
+  right: 0%;
 
  }

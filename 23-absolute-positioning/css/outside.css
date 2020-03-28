@@ -8,8 +8,8 @@ section:nth-of-type(2) .container {
 section:nth-of-type(2) .container .circle:nth-child(1) {
   position: absolute;
   width: 100%;
-  bottom: -100px;
-  left: -100px;
+  bottom: -50%;
+  left: -50%;
   z-index: -1;
 
 }
@@ -17,8 +17,8 @@ section:nth-of-type(2) .container .circle:nth-child(1) {
 section:nth-of-type(2) .circle:nth-child(2){
   position: absolute;
   width: 100%;
-  top: -100px;
-  left: -100px;
+  top: -50%;
+  left: -50%;
   z-index: -1;
 
 }
@@ -26,8 +26,8 @@ section:nth-of-type(2) .circle:nth-child(2){
 section:nth-of-type(2) .circle:nth-child(3) {
   position: absolute;
   width: 100%;
-  top: -100px;
-  right: -100px;
+  top: -50%;
+  right: -50%;
   z-index: -1;
 
 }
@@ -35,8 +35,8 @@ section:nth-of-type(2) .circle:nth-child(3) {
 section:nth-of-type(2) .circle:nth-child(4) {
   position: absolute;
   width: 100%;
-  bottom: -100px;
-  right: -100px;
+  bottom: -50%;
+  right: -50%;
   z-index: -1;
 
 

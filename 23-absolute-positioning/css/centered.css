@@ -12,27 +12,28 @@ section:nth-of-type(3) .container .circle{
 section:nth-of-type(3) .container .rect{
   position: absolute;
   width: 50%;
-  top: 50px;
-  bottom: 50px;
-  left: 50px;
-  right: 1px;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
 }
+
 
 section:nth-of-type(3) .container .pipe{
   position: absolute;
   width: 50%;
-  top: 50px;
-  bottom: 50px;
-  left: 50px;
-  right: 1px;
-
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
 }
 
 section:nth-of-type(3) .container .bar{
   position: absolute;
   width: 50%;
-  top: 50px;
-  bottom: 50px;
-  left: 50px;
-  right: 1px;
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+
 }
