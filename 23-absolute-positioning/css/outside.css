@@ -1,0 +1,43 @@
+section:nth-of-type(2) .container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+section:nth-of-type(2) .container .circle:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  left: -100px;
+  z-index: -1;
+
+}
+
+section:nth-of-type(2) .circle:nth-child(2){
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+
+}
+
+section:nth-of-type(2) .circle:nth-child(3) {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  right: -100px;
+  z-index: -1;
+
+}
+
+section:nth-of-type(2) .circle:nth-child(4) {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  right: -100px;
+  z-index: -1;
+
+
+}

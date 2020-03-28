@@ -1,0 +1,29 @@
+section:nth-of-type(4) .container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+section:nth-of-type(4) .container .rect {
+  position: absolute;
+  width: 100%;
+}
+
+section:nth-of-type(4) .container .circle {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+section:nth-of-type(4) .container .pipe {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+
+
+section:nth-of-type(4) .container .bar{
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}

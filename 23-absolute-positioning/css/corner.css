@@ -1,38 +1,35 @@
-.container {
-  border: 1px solid;
-  border-color: lightgrey;
+section:nth-of-type(1) .container{
+  position: relative;
   width: 200px;
   height: 200px;
-
 }
 
-.container .circle{
-  position: static;
-  float: right;
-  width: 50px;
-  height: 50px;
-  padding-block-start: 9.5rem;
-}
-
-.container .rect {
+section:nth-of-type(1) .container .circle {
   position: absolute;
-  width: 50px;
-  height: 50px;
-
+  width: 25%;
+  bottom: -1px;
+  right: -1px;
 }
 
-.container .pipe {
+section:nth-of-type(1) .container .rect {
+  width: 25%;
   position: absolute;
-  float: left;
-  width: 50px;
-  height: 50px;
-  padding-block-start: 9.5rem;
+  top: -1px;
+  left: 0.1px;
 }
 
-.container .bar {
-  width: 50px;
-  height: 50px;
+
+section:nth-of-type(1) .container  .pipe {
   position: absolute;
-  padding-inline-start: 10rem;
-  left: 25px;
+  width: 25%;
+  bottom: -1px;
+  left: 1px;
+}
+
+section:nth-of-type(1) .container .bar {
+  width: 25%;
+  position: absolute;
+  top: 1px;
+  right: -1px;
+
  }
