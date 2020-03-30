@@ -1,0 +1,5 @@
+main > header {
+  background-image: linear-gradient(rgba(0,0,0,.2,), rgba(0,0,0,.2));
+  background-size: cover;
+  padding: 12px;
+}

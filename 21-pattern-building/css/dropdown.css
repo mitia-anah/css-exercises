@@ -1,4 +1,4 @@
-ul {
+/*ul {
   list-style: none;
 }
 
@@ -15,7 +15,7 @@ ul > li a {
   height: 20px;
 }
 .dropdown_trigger {
-  font-size: xx-large;
+  font-size: 30px;
   font-weight: 900;
 }
 
@@ -27,4 +27,89 @@ ul > li a {
 input[type="checkbox"]:checked ~ .dropdown_contents {
   display: block;
 }
+*/
+/* shared state style */
+/*======================*/
+.dropdown {
+  position: relative;
+}
 
+.dropdown [type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.dropdown_trigger {
+  background-color: hotpink;
+  color: #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  position: relative;
+  padding-inline-end: 3rem;
+}
+
+.dropdown_trigger::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  top: 50%;
+  margin-top: -0.3rem;
+  right: 1rem;
+}
+
+.dropdown_contents {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 2px 2px  5px rgba(0,0,0,.2);
+}
+
+.dropdown_contents ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown_contents a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: hotpink;
+  text-decoration: none;
+  transition:  all 3s;
+}
+ .dropdown_contents a:hover {
+   background-color: hotpink;
+   color: #fff;
+
+ }
+
+/* create default state:closed / unchecked */
+/*=========================*/
+.dropdown_contents {
+  display: none;
+}
+
+.dropdown_trigger::before {
+  transition: border .3s;
+  border-color: currentColor transparent transparent transparent;
+  border-style: solid;
+  border-width: 0.6rem 0.5rem 0 0.5rem;
+}
+
+
+/* Create alternative state:open / checked */
+[type="checkbox"]:checked ~ .dropdown_trigger::before {
+  border-color: transparent transparent currentColor transparent;
+  border-style: solid;
+  border-width: 0 0.5rem 0.6rem 0.5rem;
+}
+
+[type="checkbox"]:checked ~ .dropdown_contents {
+  display: block;
+}

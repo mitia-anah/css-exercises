@@ -1,41 +1,50 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  border: 1px solid;
+  background-color: rgb(139, 137, 137);
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.icon_left {
+  padding-left: 3rem;
+  position: relative;
+  font-weight: bold;
+}
+
 a.icon.icon_left::before {
   content:"";
   background-image: url('../icon-facebook.png');
-  width: 2rem;
-  height: 2rem;
   background-size: 100%;
-  margin-inline-start: 1rem;
-  margin-inline-end: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 50%;
+  left: 0.75rem;
+  margin-top: -0.75rem;
   border-radius: 50%;
-  display: inline-block;
-  background-position: left;
+  display: block;
+  position: absolute;
 }
 
-.icon {
-  display: inline-block;
-  border: 1px solid;
-  background-color: orchid;
-  padding: 1rem;
-}
-
-.example a {
-  text-decoration: none;
-  color: #00008b;
-  font-weight: 900;
-  font-size: x-large;
-  padding-bottom: 1rem;
+.icon_right {
+  font-weight: bold;
+  padding-right: 3rem;
+  position: relative;
 }
 
 a.icon.icon_right::after{
   content:"";
   background-image: url('../icon-facebook.png');
-  width: 2rem;
-  height: 2rem;
   background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 50%;
+  right: 0.75rem;
+  margin-top: -0.75rem;
   border-radius: 50%;
-  display: inline-block;
-  background-position: right;
-  margin-inline-start: 1.5rem;
-  margin-inline-end: 1rem;
+  display: block;
+  position: absolute;
 }
-
