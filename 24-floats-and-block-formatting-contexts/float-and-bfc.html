@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floats and block formatting contexts</title>
+    <link rel="stylesheet" href="floats.css">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>
+        floats and block formatting contexts
+        </h1>
+      </header>
+      <div class="floats">
+        <h2>
+          Float and clear properties:
+        </h2>
+          <ol>
+            <li>The default values for float and clear are <q>none.</q></ul>
+            <li>These are the possible values for clear:</li>
+              <ul>
+                <li>right</li>
+                <li>left</li>
+                <li>none</li>
+                <li>both</li>
+              </ul>
+            <li>The rule associated with floated, in terms of source order is that:<br>
+              <ul>
+                <li> the element floated must come before an other element</li>
+                <li> to make text or an element to wrap arround them</li>
+              </ul>
+            </li>
+            <li>Can we float other elements besides image? Yes we can!</li>
+            <li>There is a way to create a two-column layout with float,<br> which is separating the contents into two part by using a <q>div</q> for example.</li>
+            </li>
+          </ol>
+      </div>
+      <div class="bfc">
+        <h3>BFC (Block formatting contexts)</h3>
+        <ol>
+          <li>As my understand, BFC is all about transforming the layout of block boxes and sets of rules for how box behaves in differently containers.</li>
+          <li><p>We can 'clear' a float by creating a block formatting context on the parent,<br>
+            this is achieved by putting a certain set of properties on the container. The properties are:</p></li>
+            <ul>
+              <li>overflow: hidden, auto, etc</li>
+              <li>display: inline-block</li>
+            </ul>
+          <li>How can I forget about Block Formatting Contexts?</li>
+        </ol>
+      </div>
+    </article>
+  </body>
+</html>
