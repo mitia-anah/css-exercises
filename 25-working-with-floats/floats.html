@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Floats</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Floats</h1>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h2>Images in context</h2>
+          <p>
+            Float the images and deal with the floating behaviour to recreate this example:
+          </p>
+          <p>
+            <img src="images/context.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <div class="container">
+            <img src="images/inspector_gadget.jpg" alt="Inspector Gadget">
+            <p>
+              Inspector Gadget, the titular character of the series, is a world-famous cyborg police inspector who works for a secret police organization that combats crime across the globe, with each of his missions focused on thwarting the criminal schemes of M.A.D.
+            </p>
+            <img src="images/doctor_claw.png" alt="Dr. Claw" class="doctor_claw">
+            <p>
+              M.A.D. (which stands for "Mean And Dirty") is a criminal organization led by the nefarious Dr. Claw, whose schemes are conducted by his agents.
+            </p>
+            <p>
+              Missions that he undertakes often occur in a foreign locale, or within the fictional city of Metro City. Despite the fact that Inspector Gadget is equipped with numerous gadgets to help him, including a personal vehicle that can morph between a family minivan to a compact police car, he is ultimately incompetent and clueless on each mission, often uses a gadget that he did not call for, and is sometimes prone to causing trouble inadvertently for those around him - an example of this is a running gag, inspired by the "self-destruct" message, in which Inspector Gadget is given briefing messages from his boss Chief Quimby, who primarily hands them to him while in disguise, only to have them unintentionally returned to him before they detonate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <header>
+          <h2>Images in a column</h2>
+          <p>
+            Create a false column, or 'faux-column', by floating the images, and controlling how the text behaves around them.<br>
+            The image 'column' has a width of <code>250px</code>. The result should look like this:
+          </p>
+          <p>
+            <img src="images/column.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <div class="container">
+            <div>
+              <img src="images/inspector_gadget.jpg" alt="Inspector Gadget">
+              <p>
+                Inspector Gadget, the titular character of the series, is a world-famous cyborg police inspector who works for a secret police organization that combats crime across the globe, with each of his missions focused on thwarting the criminal schemes of M.A.D.
+              </p>
+            </div>
+            <div>
+              <img src="images/doctor_claw.png" alt="Dr. Claw" class="doctor_claw">
+              <p>
+                M.A.D. (which stands for "Mean And Dirty") is a criminal organization led by the nefarious Dr. Claw, whose schemes are conducted by his agents.
+              </p>
+              <p>
+                Missions that he undertakes often occur in a foreign locale, or within the fictional city of Metro City. Despite the fact that Inspector Gadget is equipped with numerous gadgets to help him, including a personal vehicle that can morph between a family minivan to a compact police car, he is ultimately incompetent and clueless on each mission, often uses a gadget that he did not call for, and is sometimes prone to causing trouble inadvertently for those around him - an example of this is a running gag, inspired by the "self-destruct" message, in which Inspector Gadget is given briefing messages from his boss Chief Quimby, who primarily hands them to him while in disguise, only to have them unintentionally returned to him before they detonate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <header>
+          <h2>Float-based layouts</h2>
+          <p>
+            Try to achieve this layout with the <code>div</code>s below.
+          </p>
+          <p>
+            <img src="images/layouts.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <div class="container">
+            <div class="header">
+              Header
+            </div>
+            <div class="article">
+              <div class="navigation">
+                Navigation
+              </div>
+              <div class="sidebar">
+                Sidebar
+              </div>
+              <div class="content">
+                Content
+              </div>
+            </div>
+            <div class="footer">
+              Footer
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <header>
+          <h2>Row-based layouts</h2>
+          <p>
+            Let's build a form layout using floats, like this example:
+          </p>
+          <p>
+            <img src="images/form-layout.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <form action="#" method="POST">
+            <header>
+              <h3>Tell us about your last job</h3>
+            </header>
+
+            <div class="form_toolbar">
+              <button type="submit" name="action" value="skip">Skip</button>
+            </div>
+
+            <div class="form_row">
+              <label for="field_title">Title</label>
+              <div class="field">
+                <input type="text" name="title" id="field_title">
+              </div>
+            </div>
+
+            <div class="form_row">
+              <label for="field_company">Company</label>
+              <div class="field">
+                <input type="text" name="company" id="field_company">
+              </div>
+            </div>
+
+            <div class="form_row_group">
+              <div class="form_row">
+                <label for="field_start_date">Start date</label>
+                <div class="field">
+                  <input type="date" name="start_date" id="field_start_date">
+                </div>
+              </div>
+              <div class="form_row">
+                <label for="field_end_date">End date</label>
+                <div class="field">
+                  <input type="date" name="end_date" id="field_end_date">
+                </div>
+              </div>
+            </div>
+
+            <div class="form_row form_actions">
+              <button type="submit" name="action" value="save">Save</button>
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
