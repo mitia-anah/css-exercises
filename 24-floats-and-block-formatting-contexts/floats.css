@@ -1,0 +1,45 @@
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* different style for `floats`only */
+article .floats {
+  display: inline-block;
+  border: 2px solid;
+  background-color: mediumaquamarine;
+}
+
+.floats h2{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  border:1px solid black;
+  padding-inline-start: 1rem;
+  padding-inline-end: 3rem;
+  margin-block-start: 0rem;
+}
+
+.floats > ol li {
+  list-style: none;
+}
+
+/* style for BFC (block formatting contexts */
+.bfc {
+  display: block;
+  border: 2px solid red;
+  margin-block-start: 1rem;
+}
+
+.bfc h3 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid orangered;
+  margin-block-start: 0rem;
+}
+
+.bfc > ol li {
+  list-style: none;
+}
