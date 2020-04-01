@@ -1,0 +1,17 @@
+section:nth-of-type(2) img[src="images/inspector_gadget.jpg"] {
+  float: left;
+  margin-inline-end: 2rem;
+}
+
+section:nth-of-type(2) img[src="images/doctor_claw.png"] {
+  float: left;
+  clear: right;
+  margin-inline-end: 3rem;
+  margin-bottom: 10rem;
+  margin-right: 3rem;
+}
+
+section:nth-of-type(2) img[src="images/doctor_claw.png"] ~ p:first-of-type {
+  margin-block-start: 8rem;
+
+}

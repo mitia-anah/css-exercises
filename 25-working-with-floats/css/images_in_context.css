@@ -1,5 +1,17 @@
-section .container::nth-of-type(1) {
-  content: "";
-  display: inline-block;
+section:nth-of-type(1) img[src="images/inspector_gadget.jpg"] {
+  float: left;
+  margin-inline-end: 1rem;
 
+}
+
+section:nth-of-type(1) .doctor_claw {
+  float: right;
+}
+
+section:nth-of-type(1) img[src="images/doctor_claw.png"] {
+  margin-bottom: 1rem;
+  margin-inline-start: 1rem;
+}
+section:nth-of-type(1) .doctor_claw ~ p:not(:last-of-type) {
+  padding-top: 8rem;
 }
