@@ -1,3 +1,8 @@
 article {
   max-width: 50rem;
 }
+
+article {
+  display: flex;
+
+}
