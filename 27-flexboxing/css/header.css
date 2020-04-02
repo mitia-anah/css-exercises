@@ -1,0 +1,13 @@
+body > header {
+  color: #fff;
+}
+
+body > header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+body > header a {
+  color: inherit;
+  text-decoration: none;
+}

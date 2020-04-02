@@ -1,0 +1,20 @@
+html {
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.a11y {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

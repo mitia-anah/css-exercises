@@ -34,3 +34,7 @@ A list of practical exercises to use as we learn CSS.
 - [21: Building patterns with pseudo-elements](21-pattern-building/index.md)
 - [22: Layouts using positioning](22-positioning/index.md)
 - [23: Absolute positioning](23-absolute-positioning/index.md)
+- [24: Researching Floats and BFCs](24-floats-and-block-formatting-contexts/index.md)
+- [25: Using floats](25-working-with-floats/index.md)
+- [26: Researching Flexbox](26-flexbox/index.md)
+- [27: Working with Flexbox](27-flexboxing/index.md)
