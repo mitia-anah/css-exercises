@@ -11,14 +11,31 @@ main > header {
   color: #fff;
   padding: 4rem 0;
   box-sizing: border-box;
-  min-height: 50vh;
+  min-height: 30rem;
+  margin-block-start: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
 }
 
-main > header > h2 {
+
+main > header  h2 {
   font-size: 4rem;
   margin: 0;
+  justify-content: center;
 }
 
 main > header > p {
   margin: 0;
 }
+
+main > header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-block-start: -10rem;
+}
+
+

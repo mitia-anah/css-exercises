@@ -7,3 +7,17 @@ footer ul {
 footer p {
   color: #999;
 }
+
+footer p {
+  margin-left: 30rem;
+}
+/* footer */
+footer > nav ul {
+  display: inline-flex;
+  margin-inline-start: 20rem;
+
+}
+
+footer p {
+  margin-inline-start: 20rem;
+}
