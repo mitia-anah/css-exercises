@@ -9,15 +9,21 @@ footer p {
 }
 
 footer p {
-  margin-left: 30rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
 }
 /* footer */
 footer > nav ul {
-  display: inline-flex;
-  margin-inline-start: 20rem;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
 }
 
-footer p {
-  margin-inline-start: 20rem;
+footer > nav > ul li {
+  margin-top: 1rem;
+  margin-inline-end: 2rem;
 }
+

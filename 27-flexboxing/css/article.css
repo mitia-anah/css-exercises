@@ -1,9 +1,15 @@
 article {
-  max-width: 50rem;
+  max-width: 80rem;
 }
 
 article {
-  margin: 2rem;
-  margin-left: 25 rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
 
+article {
+  text-align: center;
+  margin-top: 2rem;
 }

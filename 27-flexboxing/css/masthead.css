@@ -12,30 +12,28 @@ main > header {
   padding: 4rem 0;
   box-sizing: border-box;
   min-height: 30rem;
-  margin-block-start: 2.5rem;
-  justify-content: space-between;
   align-items: center;
   position: relative;
-
 }
 
-
-main > header  h2 {
+main > header > h2 {
   font-size: 4rem;
   margin: 0;
   justify-content: center;
+  margin-block-end: 3rem;
 }
 
 main > header > p {
-  margin: 0;
+  position: absolute;
 }
 
-main > header {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin-block-start: -10rem;
+main header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  margin-block-start: -10rem;
+
 }
 
 
