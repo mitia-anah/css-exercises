@@ -1,0 +1,38 @@
+body > header {
+
+}
+
+body > header h1 {
+  border-block-end: 1px solid #4d4d4d;
+}
+
+body > header a {
+  display: block;
+  color: #ccc;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 0;
+}
+
+body > header a:hover {
+  color: #fff18f;
+  font-weight: 700;
+}
+
+body > header nav {
+  font-size: 1rem;
+}
+
+body > header h1 {
+  font-size: 1.25rem;
+}
+
+body > header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > header li {
+  border-block-end: 1px solid #4d4d4d;
+}

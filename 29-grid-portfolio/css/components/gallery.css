@@ -1,0 +1,43 @@
+/*
+  The gallery component is a list of grid-based tiles (`li`),
+  with 6 columns, each having an inner width of 145px.
+*/
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Each `li` is a grid-item
+*/
+.gallery li {
+
+}
+
+/*
+  Using block-based anchors as wrappers over the `figure`
+*/
+.gallery a {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.gallery a:hover {
+  color: #fff18f;
+}
+
+.gallery figure {
+
+}
+
+.gallery img {
+
+}
+
+.gallery figcaption {
+
+}

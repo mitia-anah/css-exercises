@@ -1,0 +1,10 @@
+body > footer {
+  color: #ccc;
+  font-size: 0.75rem;
+  border-block-start: 1px solid #4d4d4d;
+  padding-block-start: 0.75rem;
+}
+
+body > footer a {
+  color: #fff;
+}
