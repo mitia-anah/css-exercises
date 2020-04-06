@@ -38,3 +38,4 @@ A list of practical exercises to use as we learn CSS.
 - [25: Using floats](25-working-with-floats/index.md)
 - [26: Researching Flexbox](26-flexbox/index.md)
 - [27: Working with Flexbox](27-flexboxing/index.md)
+- [28: Researching Grid](28-grid/index.md)
