@@ -1,0 +1,58 @@
+/* How many columns does a grid have by default?
+   grid only have 1 cloumn by default.
+- What are the differences between Flexbox and Grid?
+  The difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column.
+  Grid was designed for two-dimensional layout - rows, and columns at the same time
+- Why would you use flexbox rather than grid?
+   I would prefer using flexbox rather than grid because grid is more complicate than flex in term of specifying a single item to layout. It is easy to arrange an element in a single row or column by using flexbox.
+- Why would you use grid rather than flexbox?
+   However, grid is good when you want to arrange elements in multiple rows and columns. in addition, grid is efficient, simple to navigate and easy to clean.
+- What's a more concise way to write out the following: `grid-template-columns: 10rem 10rem 10rem 10rem;`
+  Repeat() is a concise way to write out the grid-template-column.
+- How can we specify a minimum height for a grid row, but still allow the row to increase in height if its content is too tall?
+  If we want to specify a minimum height for the grid row, we use the grid-auto-rows and it still allow to increase in height if itss content is too tall.
+
+*/
+.grid {
+  width: 200px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 200px 1fr);
+  grid-template-rows: repeat(2, 200px);
+
+}
+
+.grid > div {
+  background-color: blueviolet;
+  grid-area: 1 / 1 / auto / span 1;
+}
+.grid > div:nth-child(1) {
+  background-image: url("rose1.jpg");
+  grid-area:  1 / 2 / 2 / 5;
+  font-size: 2rem;
+}
+
+.grid > div:nth-child(2) {
+  display: grid;
+  background-color: red;
+  font-size: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 100px 5fr);
+  grid-template-rows: repeat(1, 50px);
+  color: tomato;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 2rem;
+  column-gap: 50px;
+}
+
+section > div:nth-child(1) {
+  background-color: teal;
+}
+ section > div:nth-child(3) {
+   background-color: yellow;
+   column-gap: 20px;
+ }
