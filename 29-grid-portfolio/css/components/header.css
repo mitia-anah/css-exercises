@@ -1,9 +1,11 @@
 body > header {
-
+  display: grid;
 }
 
 body > header h1 {
   border-block-end: 1px solid #4d4d4d;
+  display: grid;
+  grid-column-start: 2rem;
 }
 
 body > header a {
