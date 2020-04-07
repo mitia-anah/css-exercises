@@ -3,3 +3,28 @@
 @import "components/headings.css";
 @import "components/about.css";
 @import "components/footer.css";
+
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(3, 200px);
+  columns: 15px;
+}
+
+.heading_page {
+  grid-row-start: 1;
+  margin-block-start: 1rem;
+}
+
+img {
+  grid-column: 2 / 4;
+  grid-row-start: 1;
+  margin-block-start: 1.3rem;
+}
+
+.about_description {
+  grid-template-columns: repeat(2, 500px);
+  grid-column: 4 / 6;
+}
