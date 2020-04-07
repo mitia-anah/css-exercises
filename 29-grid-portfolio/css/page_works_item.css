@@ -1,7 +1,6 @@
 @import "components/defaults.css";
 @import "components/header.css";
 @import "components/headings.css";
-@import "components/posts.css";
-@import "components/images.css";
+@import "components/works_item.css";
+@import "components/gallery.css";
 @import "components/footer.css";
-

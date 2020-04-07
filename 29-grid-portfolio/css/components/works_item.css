@@ -1,0 +1,33 @@
+.works_item {
+
+}
+
+.works_item_header {
+  color: #ccc;
+}
+
+.works_item_content {
+
+}
+
+.works_item_image_container {
+
+}
+
+.works_item_navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.works_item_navigation a {
+  display: block;
+  color: #ccc;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.works_item_navigation a b,
+.works_item_navigation a:hover {
+  color: #fff18f;
+}

@@ -1,0 +1,38 @@
+.heading_page {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading_important {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ccc;
+  padding-block-end: 35px;
+  border-block-end: 1px solid #4d4d4d;
+}
+
+.heading_introduction {
+  margin-block-start: 2rem;
+  margin-block-end: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-block-end: 1px solid #4d4d4d;
+  line-height: 1;
+}
+
+.heading_accent {
+  font-size: 0.875rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #ccc;
+  margin-block-end: 2rem;
+}
+
+.heading_accent::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  width: 1rem;
+  background-color: #4d4d4d;
+}
