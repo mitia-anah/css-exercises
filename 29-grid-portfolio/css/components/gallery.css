@@ -12,8 +12,11 @@
 /*
   Each `li` is a grid-item
 */
-.gallery li {
-
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  row-gap: 30px;
+  column-gap: 15px;
 }
 
 /*
@@ -32,7 +35,6 @@
 }
 
 .gallery figure {
-
 }
 
 .gallery img {
