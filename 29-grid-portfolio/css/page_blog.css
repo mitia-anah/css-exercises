@@ -5,3 +5,36 @@
 @import "components/images.css";
 @import "components/footer.css";
 
+
+.heading_important {
+  margin-inline-start: 10rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  column-gap: 15px;
+  margin-block-start: 1rem;
+  grid-template-areas:
+   "blank header header header header header"
+   "footer post_content post_content post_content post_content post_content "
+}
+.post > header {
+  grid-area: header;
+}
+
+.post_content {
+  grid-area: post_content;
+  border-bottom: 1px solid;
+  border-color: rgba(128, 128, 128, 0.424);
+  padding-block-end: 4rem;
+}
+
+.post footer {
+  grid-area: footer;
+  margin-block-start: 1rem;
+  border-bottom: 1px solid;
+  border-color: rgba(128, 128, 128, 0.424);
+
+}
+
