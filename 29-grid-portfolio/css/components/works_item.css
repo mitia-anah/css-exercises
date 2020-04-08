@@ -1,23 +1,32 @@
 .works_item {
-
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  column-gap: 15px;
+  row-gap: 30px;
 }
 
 .works_item_header {
   color: #ccc;
+  grid-column: 1 / 2;
+
 }
 
 .works_item_content {
-
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: repeat(5, 145px);
+  grid-column-end: 3;
 }
 
 .works_item_image_container {
-
+  grid-column: 1 / 6;
 }
 
 .works_item_navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  grid-template-columns: repeat(6, 145px);
 }
 
 .works_item_navigation a {
@@ -25,6 +34,7 @@
   color: #ccc;
   padding: 0.75rem;
   text-decoration: none;
+  margin-inline-start: -0.75rem;
 }
 
 .works_item_navigation a b,
