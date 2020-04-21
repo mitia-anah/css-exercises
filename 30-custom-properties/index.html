@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> custome properties </title>
+    <style>
+      :root {
+        --columns: 3;
+        --cell-color: rgba(255, 255, 0, 0.692);
+        --font-size: 20px;
+      }
+
+      body {
+        background-color: var(--cell-color);
+      }
+
+
+
+      div {
+        display: grid;
+        background-color: rgba(234, 0, 255, 0.432);
+        grid-template-columns: repeat(var(--columns), 1fr);
+        gap: 1rem;
+        font-size: var(--font-size);
+        line-height: 1;
+        list-style: none;
+        padding: 0;
+      }/*
+      ul {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        gap: 2;
+        font-size: var(--font-size);
+        line-height: 1;
+        list-style: none;
+        padding: 0;
+      }*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Research about custome properties
+      </h1>
+    </header>
+    <div>
+      <ul>
+        <li>To define a custom Property's name, we have to use two hyphens(--) place before the name. We also can use hyphen(-) or underscore(_) characters.</li>
+        <li>We can use all characters except Unicode(U+0040) in custom Property name.</li>
+        <li>The possible value that we can assign to a new Custome Property is a value that using a var() function.</li>
+        <li>It is useful to creat Custom Properties using the <q>:root</q> or <q>html</q> selector when we want to  select html with a higher specificity. However, </li>
+        <li>After we've defined a new custome Property, to recall that Custome Property, we use the the calc() function. </li>
+        <li>The ways to override a Custom Property are:
+          <ul>
+            <li>text color</li>
+            <li>Header</li>
+            <li>Button</li>
+          </ul>
+        </li>
+        <li>Custom Properties are very useful to avoid repeatation in CSS and also it can help us to simplify styling various part(theming) in our css.  </li>
+        <li>The only aspect (or part) of css syntax that we can use Custom Properties is inside of declaration block.</li>
+      </ul>
+    </div>
+</body>
+</html>
