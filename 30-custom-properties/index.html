@@ -6,35 +6,41 @@
     <title> custome properties </title>
     <style>
       :root {
-        --columns: 3;
+        --columns: 1;
         --cell-color: rgba(255, 255, 0, 0.692);
         --font-size: 20px;
       }
 
-      body {
-        background-color: var(--cell-color);
+      div {
+        background-color: rgba(234, 0, 255, 0.432);
       }
 
-
-
-      div {
-        display: grid;
-        background-color: rgba(234, 0, 255, 0.432);
-        grid-template-columns: repeat(var(--columns), 1fr);
-        gap: 1rem;
-        font-size: var(--font-size);
-        line-height: 1;
-        list-style: none;
-        padding: 0;
-      }/*
       ul {
+        display: grid;
         grid-template-columns: repeat(var(--columns), 1fr);
-        gap: 2;
+        row-gap: 20px;
         font-size: var(--font-size);
         line-height: 1;
         list-style: none;
         padding: 0;
-      }*/
+      }
+
+      body {
+       counter-reset: major-clause;
+      }
+
+      li {
+        counter-reset: clause ;
+      }
+
+      li::before {
+        counter-increment: major-clause;
+        content: counter(major-clause)".";
+      }
+
+      li li:before {
+
+      }
     </style>
   </head>
   <body>
@@ -46,19 +52,19 @@
     <div>
       <ul>
         <li>To define a custom Property's name, we have to use two hyphens(--) place before the name. We also can use hyphen(-) or underscore(_) characters.</li>
-        <li>We can use all characters except Unicode(U+0040) in custom Property name.</li>
-        <li>The possible value that we can assign to a new Custome Property is a value that using a var() function.</li>
-        <li>It is useful to creat Custom Properties using the <q>:root</q> or <q>html</q> selector when we want to  select html with a higher specificity. However, </li>
-        <li>After we've defined a new custome Property, to recall that Custome Property, we use the the calc() function. </li>
+        <li>We can use all characters except a periode or fullstop in custom Property name.</li>
+        <li>The possible value that we can assign to a new Custome Property is a number, normal text.</li>
+        <li>It is useful to creat Custom Properties using the <q>:root</q> or <q>html</q> selector when we want to make available to every note bellow. However, if we want to share a variable value to </li>
+        <li>After we've defined a new custome Property, to recall that Custome Property, we use the the var(--name) function. </li>
         <li>The ways to override a Custom Property are:
           <ul>
-            <li>text color</li>
-            <li>Header</li>
-            <li>Button</li>
+            <li>changing the value</li>
+            <li>media queries</li>
+            <li></li>
           </ul>
         </li>
-        <li>Custom Properties are very useful to avoid repeatation in CSS and also it can help us to simplify styling various part(theming) in our css.  </li>
-        <li>The only aspect (or part) of css syntax that we can use Custom Properties is inside of declaration block.</li>
+        <li>Custom Properties are very useful to avoid repeatation in CSS and also it can help us to simplify styling various part(theming) in our css. It is a one point of control, which means making changes in one place.</li>
+        <li>The only aspect (or part) of css syntax that we can use Custom Properties is the declaration block.</li>
       </ul>
     </div>
 </body>
