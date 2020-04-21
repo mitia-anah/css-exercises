@@ -39,3 +39,5 @@ A list of practical exercises to use as we learn CSS.
 - [26: Researching Flexbox](26-flexbox/index.md)
 - [27: Working with Flexbox](27-flexboxing/index.md)
 - [28: Researching Grid](28-grid/index.md)
+- [29: Using Grid in a Portfolio theme](29-grid-portfolio/index.md)
+- [30: Custom Properties](30-custom-properties/index.md)
