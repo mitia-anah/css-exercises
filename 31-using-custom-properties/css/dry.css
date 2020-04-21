@@ -1,0 +1,40 @@
+
+
+#dry .grid {
+  display: inline-grid;
+  grid-template-columns: repeat(10, 20px);
+}
+
+#dry a {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(63, 63, 63);
+  transition: background-color 1s;
+  counter-increment: item;
+}
+
+#dry a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+#dry a::before {
+  content: counter(item);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(63, 63, 63);
+  transition: color 1s;
+}
+
+#dry a:hover::before {
+  color: rgb(255, 255, 255);
+}
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mosaic</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Custom Properties</h1>
+    </header>
+    <main>
+      <section id="dry">
+        <header>
+          <h2><abbr title="Don't repeat yourself">DRY</abbr>-ing up code</h2>
+          <p>
+            Custom Properties are great for defining constants, and then re-using those constants throughout a CSS document.
+          </p>
+          <p>Uncomment the code in <code>dry.css</code> and convert as many values as you can to Custom Properties. Remember to only use the same Custom Properties for elements that are related.</p>
+          <p>The result should look like this (if you hover your cursor over the 12<sup>th</sup> cell).</p>
+          <p>
+            <img src="images/grid.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <div class="grid">
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+            <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+          </div>
+        </div>
+      </section>
+      <section id="c_and_i">
+        <header>
+          <h2>Colours and inheritance</h2>
+          <p>
+            I've tried to create the following rainbow pattern using Custom Properties and <code>hsla()</code>.
+          </p>
+          <p>
+            <img src="images/rainbow.png" alt>
+          </p>
+          <p>
+            I can't figure out how to change the hue per row without creating at least 100 different selectors!<br>
+            Here are the details you need to get started:
+          </p>
+          <dl>
+            <dt>
+              Structure
+            </dt>
+            <dd>
+              There 10 <i>rows</i>, each <i>row</i> contains 10 <i>anchors</i>, totalling 100 <i>anchors</i>.
+            </dd>
+            <dt>
+              Colouring
+            </dt>
+            <dd>
+              A <code>background-color</code> is set on all <i>anchors</i> using 1 selector
+              .</a>
+            <dt>
+              <b>H</b>ue
+            </dt>
+            <dd>
+              This starts at <code>36deg</code> for the first <i>row</i>.
+            </dd>
+            <dd>
+              This increases by <code>36deg</code> per <i>row</i>.
+            </dd>
+            <dd>
+              The last <i>row</i> has a hue of <code>360deg</code>
+            </dd>
+            <dt>
+              <b>S</b>aturation
+            </dt>
+            <dd>
+              This is constant for all <i>anchors</i>, at <code>100%</code>
+            </dd>
+            <dt>
+              <b>L</b>ightness
+            </dt>
+            <dd>
+              This is constant for all <i>anchors</i>, at <code>50%</code>
+            </dd>
+            <dt>
+              <b>A</b>lpha
+            </dt>
+            <dd>
+              This starts at <code>0.1</code> for the first <i>anchor</i> in each <i>row</i>.
+            </dd>
+            <dd>
+              This increases by <code>0.1</code> per <i>anchor</i> in the <i>row</i>.
+            </dd>
+            <dd>
+              The last <i>anchor</i> in each <i>row</i> has an opacity of <code>1.0</code>
+            </dd>
+          </p>
+          <p>
+            You'll need to change the CSS in <code>mosaic.css</code> so that we only use the <code>background-color</code> in one selector, then using other selectors to modify the <code>hue</code> and <code>alpha</code> custom properties for each <i>anchor</i>.<br>
+          </p>
+        </header>
+        <div class="example">
+          <div class="table">
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+            <div class="row"><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
