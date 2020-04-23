@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc funtion</title>
+    <style>
+      :root {
+        --color: red;
+      }
+
+
+      li b {
+        display: block;
+        padding-inline-start: 3rem;
+        color: var(--color);
+      }
+
+      li i {
+        color:cornflowerblue;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -11,17 +27,22 @@
         Calc() function
       </h1>
     </header>
-    <div>
-      <ul>
-        <li>A Calc() function can support numerique value, division, multiplication, addition and subtruction.</li>
-        <li>Because when we use the mathematical order of operation (PEDMAS / BODMAS) in the function, we must follow the rule like this(Brackets Order, Division, Multiplication, Addition and Subtraction). Here is the multiplication need to go first then the addition, that's why the value became 14 instead of 20.</li>
-        <li>We can use the cal() function to convert one type of unit to another type of unit. </li>
-        <li>If we want to convert a unitless number to a unit value, what we need to do is to cancel out the unit value.</li>
-        <li>InThe Mozilla Develloper explains that (+) and (-) operators must be surrounded by whitespace. It's said that calc(50% -8px) will be ddefined as a percentage followed by a negative length — an invalid expression — while calc(50% - 8px) is a percentage followed by a subtraction operator and a length. Likewise, calc(8px + -50%) is treated as a length followed by an addition operator and a negative percentage.
-        </li>
-        <li></li>
-      </ul>
-    </div>
-
-</body>
+    <main>
+      <nav>
+        <ol>
+          <li>A Calc() function can support numerique value, division, multiplication, addition and subtruction.</li>
+          <li>When we use the mathematical order of operation (PEDMAS / BODMAS) in the function, we must follow the rule like this(Brackets Order, Division, Multiplication, Addition and Subtraction). For example:
+            <b>Here is (2 + 3 * 4 )= 20</b>, but if we follow the mathematical order, it should look like this <b>(2 + 3 * 4)=14</b> <i>here, the multiplication is finished before the addition.</i>
+          </li>
+          <li>We can use the cal() function to convert one type of unit to another type of unit. </li>
+          <li>If we want to convert a unitless number to a unit value, what we need to do is to cancel out the unit value.</li>
+          <li>In the Mozilla Develloper explains that (+) and (-) operators must be surrounded by whitespace. It's said that calc(50% -8px) will be defined as a percentage followed by a negative length — an invalid expression — while calc(50% - 8px) is a percentage followed by a subtraction operator and a length. Likewise, calc(8px + -50%) is treated as a length followed by an addition operator and a negative percentage.
+          </li>
+          <li>Thi is a simple way to convert a value into a negative value. We just multiply the positive number with a negative number. For instance, we have something like (a + b = ab) and we want the value into a negative, so this should look (a + b = (ab)*-1) equal to (-ab).
+          </li>
+          <li>The calc() function can work with colour value.</li>
+        </ol>
+      </nav>
+    </main>
+  </body>
 </html>
