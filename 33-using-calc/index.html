@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calc</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>The <code>calc()</code> function</h1>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h2>Mixing relative widths with absolute widths</h2>
+          <p>I'm trying to get this funny quote to fill the available width of the container, minus enough space on either side for the emojis and some extra space.</p>
+          <p>But when I put a <code>width</code> of <code>100%</code> on the <code>blockquote</code> elements, they stretch too far.</p>
+          <p>Try work out the <code>width</code> value using the <code>calc()</code> function so that the emoji are outside of the white blockquote boxes, like so:</p>
+          <p>
+            <img src="images/jokes.png" alt>
+          </p>
+        </header>
+        <div class="example">
+          <div class="container">
+            <blockquote>
+              <p>Time flies like an arrow.</p>
+              <p>Fruit flies like a banana.</p>
+            </blockquote>
+          </div>
+          <div class="container">
+            <blockquote>
+              <p>
+                There once was a runner named Dwight,<br>
+                who could speed even faster than light.<br>
+                He set out one day,<br>
+                in a relative way,<br>
+                and returned on the previous night.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Working out aspect ratios</h2>
+          <p>I've found a way to make a <code>div</code> scale in height and width according to an aspect ratio.</p>
+          <p>But, I have to hardcode the value to get it to work, e.g.</p>
+          <pre><code>padding-block-start: 56.25%;</code></pre>
+          <p>I'm afraid that the next developer to look at it, won't understand what the magic number for each represents.</p>
+          <p>Please convert these percentages in <code>ratios.css</code> to <code>calc()</code> functions to better express what the percentage is made up of. e.g.</p>
+          <pre><code>padding-block-start: calc(…);</code></pre>
+        </header>
+        <div class="example">
+          <figure class="ratio" id="ratio_2_1">
+            <div></div>
+            <figcaption>800 x 400 (2:1)</figcaption>
+          </figure>
+          <figure class="ratio" id="ratio_16_9">
+            <div></div>
+            <figcaption>800 x 450 (16:9)</figcaption>
+          </figure>
+          <figure class="ratio" id="ratio_4_3">
+            <div></div>
+            <figcaption>800 x 600 (4:3)</figcaption>
+          </figure>
+          <figure class="ratio" id="ratio_1_1">
+            <div></div>
+            <figcaption>800 x 800 (1:1)</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

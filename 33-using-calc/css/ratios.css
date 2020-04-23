@@ -1,0 +1,15 @@
+#ratio_2_1 {
+  padding-block-start: 50%;
+}
+
+#ratio_16_9 {
+  padding-block-start: 56.25%;
+}
+
+#ratio_4_3 {
+  padding-block-start: 75%;
+}
+
+#ratio_1_1 {
+  padding-block-start: 100%;
+}
