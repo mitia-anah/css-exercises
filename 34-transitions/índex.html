@@ -3,54 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition</title>
-    <style>
-      div p:after {
-        content: "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺" "☺"
-        "☺" "☺" "☺" "☺" "☺" "☺";
-        border: solid 1px;
-        width: 20vw;
-        height: 20vh;
-        position: absolute;
-        background-color: white;
-      }
-
-      p:hover {
-        background-color: darkcyan;
-        color: red;
-        transition-duration: 1s;
-      }
-
-      p:hover {
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
-        background: #c00;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: transform 1s;
-      }
-      }
-
-
-
-
-    </style>
+    <title>Document</title>
   </head>
   <body>
+    <header>
+      <h1>Research about transition</h1>
+    </header>
     <div>
-      <p></p>
+      <ol>
+        <li>The other properties that included in this shorthand are timing function, duration and delay. </li>
+        <li>The transition duration is the simple way to define the total duration of a transition. But The transition-timing-function defines the speed up and slow down of the transition rate. It also describes how the animation works. In that case we use the cubic bézier function. Transition delay is a pause before the animation starts.</li>
+        <li>The animatable CSS properties using transition are:
+          <ul>
+            <li>border properties</li>
+            <li>background properties</li>
+            <li>boxes</li>
+            <li>flexes</li>
+            <li>grids</li>
+            <li>columns</li>
+            <li>fonts</li>
+            <li>clip</li>
+            <li>etc.</li>
+          </ul>
+        </li>
+        <li>We can select more than one properties to transition at a time by adding comma-separated(-transition-property), all keyword and comma separated (transition). </li>
+        <li>To set or define the desired transition state, we use pseudo classes like (:hover, :active, :focus, :target, :checked(this is very useful for managing state), classes and selector.</li>
+        <li>It is useful in some cases.</li>
+        <li>If we make people to wait then transitions become a problem.</li>
+        <li>Transitions don't work reliably with the auto keyword being one of the end states, because auto is not a number but the browser needs to do some calculations before the transitions work.</li>
+        <li>To stagger transitions, wwhich means making a number of child elements all start at different times, we use the delay property.</li>
+      </ol>
     </div>
   </body>
-  </html>
+</html>
