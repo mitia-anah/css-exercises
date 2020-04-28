@@ -1,0 +1,61 @@
+:root {
+  --frame-width: 10px;
+  --frame-colour: #555;
+  --ball-diameter: 40px;
+  --ball-string-length: 200px;
+  --ball-string-width: 2px;
+}
+
+.pendulum {
+  --frame-border: var(--frame-width) solid var(--frame-colour);
+  border-block-start: var(--frame-border);
+  border-inline-end: var(--frame-border);
+  border-inline-start: var(--frame-border);
+  border-radius: var(--frame-width) var(--frame-width) 0 0;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.metal-ball {
+  position: absolute;
+  top: var(--ball-string-length);
+  left: calc(50% + calc(var(--hanging-offset) * var(--ball-diameter)));
+  margin-left: calc(var(--ball-diameter) / -2);
+  box-sizing: border-box;
+  width: var(--ball-diameter);
+  height: var(--ball-diameter);
+  border-radius: 50%;
+  position: absolute;
+  background-image: radial-gradient(#ddd 5%, #999 20%, #555 100%);
+  transform-origin: calc(var(--ball-diameter) / 2) calc(var(--ball-string-length) * -1);
+}
+
+.metal-ball:nth-of-type(1) {--hanging-offset:-1;}
+.metal-ball:nth-of-type(2) {--hanging-offset:0;}
+.metal-ball:nth-of-type(3) {--hanging-offset:1;}
+
+.metal-ball::after {
+  content: '';
+  position: absolute;
+  top: calc(var(--ball-string-length) * -1);
+  left: 50%;
+  margin-left: calc(var(--ball-string-width) / -2);
+  width: var(--ball-string-width);
+  height: var(--ball-string-length);
+  background-color: #ccc;
+}
+
+.pendulum .metal-ball:nth-of-type(1) {
+  transform: rotate(20deg);
+}
+.pendulum:hover .metal-ball:nth-of-type(1) {
+  transform: rotate(0deg);
+}
+
+.pendulum .metal-ball:nth-of-type(3) {
+  transform: rotate(0deg);
+}
+.pendulum:hover .metal-ball:nth-of-type(3) {
+  transform: rotate(-20deg);
+}
