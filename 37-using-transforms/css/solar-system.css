@@ -69,11 +69,11 @@
 }
 
 .scene:hover #solar-system {
-
+  transform: translate(-50%, -50%) rotate(45deg) ;
 }
 
 .scene:hover #earth-system {
-
+  transform: translate(50%, -50%) scale(0.7);
 }
 
 .scene:hover #earth {

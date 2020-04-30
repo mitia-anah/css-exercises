@@ -9,6 +9,7 @@
   position: absolute;
   top: 0; right: 0;
   z-index: -1;
+
 }
 
 .user-interface label {
@@ -30,6 +31,7 @@
 .user-interface label:hover,
 .user-interface a:hover {
   background-color: rgb(0,50,255,.85);
+
 }
 
 .user-interface nav {
@@ -41,6 +43,7 @@
   min-width: 200px;
   transition: transform .2s ease-in;
   border-left: #aaa solid 1px;
+
 }
 
 .user-interface nav ul {
@@ -60,5 +63,5 @@
 }
 
 .user-interface :checked ~ nav {
-
+  transform: translateX(100%);
 }
