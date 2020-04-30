@@ -1,0 +1,85 @@
+:root {
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --glow: radial-gradient(rgba(var(--white-rgb),0.75) 0%, rgba(var(--white-rgb),0.2) 50%, rgba(var(--white-rgb),0.01) 100%);
+  --luna-size: 10px;
+  --earth-size: 20px;
+  --earth-system-size: 120px;
+  --sun-size: 50px;
+  --solar-system-size: 320px;
+  --simulated-year: 36.525s;
+  --transition-settings: transform var(--simulated-year) linear;
+  --sphere-lighting: linear-gradient(90deg, rgba(var(--black-rgb), 0.01) 0%, rgba(var(--black-rgb), 0.01) 50%, rgba(var(--black-rgb), 0.5) 50%, rgba(var(--black-rgb), 0.5) 100%);
+}
+
+.sphere {
+  border-radius: 50%;
+}
+
+.pivot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit {
+  border: 1px dashed #555;
+}
+
+#solar-system {
+  width: var(--solar-system-size);
+  height: var(--solar-system-size);
+}
+
+#sun {
+  background-color: rgb(255, 226, 60);
+  width: var(--sun-size);
+  height: var(--sun-size);
+  background-image: var(--glow);
+  box-shadow: 0 0 50px 0 rgba(255, 252, 211, 0.9);
+}
+
+#earth-system {
+  width: var(--earth-system-size);
+  height: var(--earth-system-size);
+}
+
+#earth {
+  width: var(--earth-size);
+  height: var(--earth-size);
+  background-color: navy;
+  background-image: var(--sphere-lighting);
+  background-repeat: no-repeat;
+}
+
+#luna {
+  background-color: #ccc;
+  width: var(--luna-size);
+  height: var(--luna-size);
+  background-image: var(--sphere-lighting);
+  background-repeat: no-repeat;
+}
+
+.scene:hover #solar-system,
+.scene:hover #earth-system,
+.scene:hover #earth,
+.scene:hover #luna {
+  transition: var(--transition-settings);
+}
+
+.scene:hover #solar-system {
+
+}
+
+.scene:hover #earth-system {
+
+}
+
+.scene:hover #earth {
+
+}
+
+.scene:hover #luna {
+
+}

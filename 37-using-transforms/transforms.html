@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Transforms</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Transforms</h1>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h2>Using <code>translate()</code> to show or hide</h2>
+          <p>We can use <code>translateX</code> to hide a menu away behind the user-interface, when the checkbox is unchecked.</p>
+          <p>But when the user clicks a label that toggles the checkbox, we can use that new checkbox state to act as the open signifier for the menu.</p>
+          <p>When that happens, we reset the nav's <code>translateX</code>.</p>
+          <p><b>If you have some time left over:</b></p>
+          <ul>
+            <li>Try use <code>scale()</code> instead of <code>translateX()</code></li>
+          </ul>
+        </header>
+        <div class="example">
+          <div class="user-interface">
+            <label for="checkbox-menu">Menu</label>
+            <input type="checkbox" id="checkbox-menu">
+            <nav>
+              <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Mixing Rotations with Translates</h2>
+          <p>Let's simulate a solar system by placing the Earth off to the right the Sun, the moon in orbit around the Earth, off to the right too, like this image:</p>
+          <p>
+            <img src="images/solar-system.png" alt="Solar system representation">
+          </p>
+          <p>Then let's try rotating the Earth around the Sun, and rotating the moon around the Earth, by selecting the right elements to transform.</p>
+          <p>To simulate it fully, we have to light the right side of the Earth and Moon as they travel around the Sun. How can we undo the rotations of these elements if needed?</p>
+          <p><b>If you have some time left over:</b></p>
+          <ul>
+            <li>Try to simulate our solar system in terms of scale. If the Sun is one unit high, then how many units would the Earth be in size? How many units would the Earth be apart from the Sun? etc.</li>
+            <li>Try adding other planets. Saturn with its many moons would be fun to make :)</li>
+            <li>Try going 3D! Shift our perspective, place tilts in the Earth spinning on its own axis, and the Moon's orbit around Earth tilting by 5 degrees.</li>
+          </ul>
+        </header>
+        <div class="example">
+          <div class="scene">
+            <div id="solar-system" class="sphere orbit pivot">
+              <div id="sun" class="sphere pivot"></div>
+              <div id="earth-system" class="pivot sphere orbit">
+                <div id="earth" class="sphere pivot"></div>
+                <div id="luna" class="sphere pivot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>3D transforms</h2>
+          <p>Let's build a 3D dice (a cube).</p>
+          <p>
+            <img src="images/cube.png" alt>
+          </p>
+          <p>The cube's size should be <code>var(--face-size)</code> * <code>var(--face-size)</code> * <code>var(--face-size)</code>.</p>
+          <ol>
+            <li>Start by placing the 1 and 6 on either sides of a 3D cube by using <code>translateZ()</code>.</li>
+            <li>You can click the checkbox to 'spin' the cube. This will allow you to see how your transforms are working along the way.</li>
+            <li>Then try rotating the 2 and 5 along the correct axis (X, Y or Z?), and translating them into the correct position, either before or after the rotate.</li>
+            <li>Lastly, use a similar technique for the 3 and 4, but over different axes.</li>
+          </ol>
+        </header>
+        <div class="example">
+          <div id="dice-scene" class="scene">
+            <input type="checkbox" id="dice-animate">
+            <label for="dice-animate">Spin the dice</label>
+            <div id="dice">
+              <div class="face" id="face-1"></div>
+              <div class="face" id="face-2"></div>
+              <div class="face" id="face-3"></div>
+              <div class="face" id="face-4"></div>
+              <div class="face" id="face-5"></div>
+              <div class="face" id="face-6"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section>
+        <header>
+          <h2></h2>
+          <p></p>
+        </header>
+        <div class="example">
+
+        </div>
+      </section> -->
+    </main>
+  </body>
+</html>
