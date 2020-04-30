@@ -45,3 +45,5 @@ A list of practical exercises to use as we learn CSS.
 - [32: Calc function](32-calc/index.md)
 - [33: Calc function practicals](33-using-calc/index.md)
 - [34: Transitions](34-transitions/index.md)
+- [35: Using transitions](35-using-transitions/index.md)
+- [36: Transforms](36-transforms/index.md)
