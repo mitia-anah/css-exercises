@@ -57,7 +57,7 @@
     var(--white-disc);
   background-position:
     50% 50%;
-  transform: translateZ(-50%);
+  transform: translate3d(0, 0, 125px);
 }
 
 #face-2 {
@@ -67,7 +67,7 @@
   background-position:
     20% 20%,
     80% 80%;
-    transform: rotateX(45deg) translateX(-50%);
+    transform: rotateX(-90deg) translate3d(0, 0, 125px);
 }
 
 #face-3 {
@@ -79,7 +79,7 @@
     20% 20%,
     50% 50%,
     80% 80%;
-    transform: translate(50%, 50%) rotate(45deg);
+    transform: rotateY(-90deg) translate3d(0, 0, 125px);
 }
 
 #face-4 {
@@ -93,7 +93,7 @@
     20% 80%,
     80% 20%,
     80% 80%;
-    transform: translate(50%, 50%) rotate(45deg);
+    transform: rotatey(90deg) translate3d(0, 0, 125px) ;
 }
 
 #face-5 {
@@ -109,7 +109,7 @@
     50% 50%,
     80% 20%,
     80% 80%;
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotateX(90deg) translate3d(0, 0, 125px);
 }
 
 #face-6 {
@@ -127,7 +127,7 @@
     80% 20%,
     80% 50%,
     80% 80%;
-    transform: translateZ(50px) rotateZ(45deg);
+    transform: rotateX(180deg) translate3d(0, 0, 125px);;
 }
 
 #dice-scene label {

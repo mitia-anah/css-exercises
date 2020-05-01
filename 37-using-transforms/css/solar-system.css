@@ -69,25 +69,18 @@
 }
 
 .scene:hover #solar-system {
-  transform: translate(-50%, -50%) rotate(45deg) ;
-  transition-timing-function: ease-out;
-  transition-delay: 3s;
+
 }
 
 .scene:hover #earth-system {
-  transform: translate(50%, -50%) rotate(-45deg);
-  transition-timing-function: ease-out;
-  transition-duration: 3s;
+
+  transform:  translate(160px) translate(-50%, -50%) rotate(1turn) ;
 }
 
 .scene:hover #earth {
-  transform: translate(50%, -50%);
-  transition-timing-function: ease-out;
-  transition-duration: 3s;
+  transform: translateX(80%) translateY(50%) rotate(2turn);
 }
 
 .scene:hover #luna {
-  transform: translate(50%, 50%) rotate(-45deg);
-  transition-timing-function: ease-out;
-  transition-duration: 3s;
+  transform: translate(50%, 50%);
 }
