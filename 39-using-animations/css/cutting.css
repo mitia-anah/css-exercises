@@ -1,0 +1,188 @@
+:root {
+  --blade-length: 250px;
+  --blade-width: 30px;
+  --blade-edge-width: 5px;
+  --handle-diameter: 60px;
+  --handle-thickness: 15px;
+  --pivot-x: 115px;
+  --pivot-y: 100px;
+  --pivot-diameter: 10px;
+  --handle-colour: slateblue;
+  --handle-connect-length: 60px;
+  --handle-connect-thickness: 30px;
+  --middle-z-index: 10;
+}
+
+.paper {
+  --paper-width: 60%;
+  position: absolute;
+  width: var(--paper-width);
+  left: 50%;
+  margin-left: calc(var(--paper-width) / -2);
+  background-color: #fff;
+  box-shadow: 0 20px 20px rgba(0,0,0,.2);
+}
+
+.scissor-half {
+  width: calc(
+    var(--handle-diameter) +
+    (2 * var(--handle-thickness)) +
+    15px +
+    var(--blade-length)
+  );
+  height: calc(var(--blade-width) + var(--blade-edge-width));
+}
+
+.blade {
+  position: absolute;
+  width: var(--blade-length);
+  height: var(--blade-width);
+  border-width: 0;
+  border-style: solid;
+  border-color:lightgray;
+  background-color: silver;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.handle {
+  position: absolute;
+  left: -10px;
+  width: var(--handle-diameter);
+  height: var(--handle-diameter);
+  border-width: var(--handle-thickness);
+  border-style: solid;
+  border-color: var(--handle-colour);
+  transform-origin: calc(15px + var(--handle-thickness) + var(--handle-diameter) + var(--handle-thickness) + var(--handle-connect-thickness));
+}
+
+.handle::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--handle-diameter) + (var(--handle-thickness) / 2));
+  display: block;
+  background-color: var(--handle-colour);
+  width: var(--handle-connect-length);
+  height: var(--handle-connect-thickness);
+  border-top-right-radius: calc(var(--handle-connect-thickness) / 2);
+  border-bottom-right-radius: calc(var(--handle-connect-thickness) / 2);
+}
+
+#cutting-scene {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  width: 100vw;
+  min-width: 500px;
+  max-width: 100%;
+  background-color: #eee;
+  perspective: 1000px;
+}
+
+#scissors {
+  position: absolute;
+  top: 85px;
+  left: -100%;
+  height: 200px;
+  width: 370px;
+  z-index: calc(var(--middle-z-index) + 1);
+}
+
+#scissors-pivot {
+  --negative-pivot-radius: calc(var(--pivot-diameter) / -2);
+  width: var(--pivot-diameter);
+  height: var(--pivot-diameter);
+  border: gold solid 2px;
+  position: absolute;
+  top: var(--pivot-y);
+  left: var(--pivot-x);
+  margin-block-start: var(--negative-pivot-radius);
+  margin-inline-start: var(--negative-pivot-radius);
+  z-index: 10;
+  background-color: rgba(0,0,0,.5);
+}
+
+#scissors-top {
+  position: absolute;
+  top: 77px;
+  left: 0;
+  transform-origin: calc(var(--pivot-x) + 3px) 73%;
+  transform: rotate(-15deg);
+}
+
+#blade-top {
+  bottom: 0;
+  left: 100px;
+  border-top-right-radius: 250px 50px;
+  border-top-left-radius: 50px 40px;
+  border-bottom-left-radius: 10px;
+  border-block-end-width: 5px;
+}
+
+#handle-bottom {
+  top: -24px;
+  transform: rotate(-30deg);
+}
+
+#handle-bottom::after {
+  top: calc(var(--handle-diameter) / 2);
+  margin-block-start: calc(var(--handle-connect-thickness) / -2);
+}
+
+#scissors-bottom {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  transform-origin: calc(var(--pivot-x) + 3px) 27%;
+  transform: rotate(15deg);
+}
+
+#blade-bottom {
+  top: 0;
+  left: 100px;
+  border-bottom-right-radius: 250px 50px;
+  border-bottom-left-radius: 50px 40px;
+  border-top-left-radius: 10px;
+  border-block-start-width: 5px;
+  z-index: 5;
+}
+
+#handle-top {
+  bottom: -24px;
+  transform: rotate(30deg);
+  z-index: 6;
+}
+
+#handle-top::after {
+  bottom: calc(var(--handle-diameter) / 2);
+  margin-block-end: calc(var(--handle-connect-thickness) / -2);
+}
+
+#paper-cut {
+  top: 49px;
+  height: 150px;
+  z-index: calc(var(--middle-z-index) - 1);
+  transform-origin: 50% 100%;
+  transform: translateZ(100px) rotateX(15deg);
+}
+
+#paper-uncut {
+  top: 199px;
+  height: 350px;
+  transform-origin: 50% 0;
+  transform: translateZ(100px) rotateX(15deg);
+  border-block-start: 1px dashed #ccc;
+  z-index: calc(var(--middle-z-index) + 1);
+}
+
+/* Debug setup */
+.debug,
+.debug .scissor-half {
+  outline-style: dotted;
+  outline-width: 1px;
+}
+.debug {outline-color: blue;}
+.debug #scissor-top {outline-color: red;}
+.debug #scissor-bottom {outline-color: green;}

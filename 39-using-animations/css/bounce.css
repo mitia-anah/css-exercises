@@ -1,0 +1,26 @@
+:root {
+  --ball-diameter: 100px;
+}
+
+#court {
+  border-block-end: peru solid 20px;
+  position: relative;
+  height: calc(var(--ball-diameter) * 5);
+}
+
+#ball {
+  position: absolute;
+  left: var(--ball-diameter);
+  top: 0;
+  width: var(--ball-diameter);
+  height: var(--ball-diameter);
+  border-radius: 50%;
+  background-color: rgb(196, 56, 5);
+  background-image:
+    radial-gradient(rgba(255,255,255,.8) 0%, rgba(255,255,255,.02) 50%),
+    radial-gradient(rgba(255, 69, 0, 1) 0%, rgb(255, 69, 0, .4) 100%);
+  background-position:
+    50% -25px,
+    50% 50%;
+  background-repeat: no-repeat;;
+}

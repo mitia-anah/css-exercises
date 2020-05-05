@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animations</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Keyframe Animations</h1>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h2>Bounce</h2>
+          <p>Let's make this ball bounce, continuously.</p>
+          <p>You'll notice some difficultly with setting an accurate timing function, we could set a custom <code>cubic-bezier()</code>, or we could choose the right intervals on the timeline for the ball's position.</p>
+          <p>When the ball reaches the court's surface, see if you can make it flatten out, and then spring back into its normal shape after bouncing.</p>
+        </header>
+        <div class="example">
+          <div id="court">
+            <div id="ball"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Cutting</h2>
+          <p>Use the scissors to cut the paper</p>
+          <p>Make each of the blades and handles of the scissors rotate around the pivot as they cut along the dotted line.</p>
+          <p>At the end of the animation, make the two pieces of paper separate from one another.</p>
+        </header>
+        <div class="example">
+          <div id="cutting-scene">
+            <div id="paper-cut" class="paper"></div>
+            <div id="scissors">
+              <div id="scissors-top" class="scissor-half">
+                <div id="blade-top" class="blade"></div>
+                <div id="handle-bottom" class="handle circular"></div>
+              </div>
+              <div id="scissors-pivot" class="circular"></div>
+              <div id="scissors-bottom" class="scissor-half">
+                <div id="blade-bottom" class="blade"></div>
+                <div id="handle-top" class="handle circular"></div>
+              </div>
+            </div>
+            <div id="paper-uncut" class="paper"></div>
+          </div>
+        </div>
+      </section>
+      <!-- <section>
+        <header>
+          <h2></h2>
+        </header>
+        <div class="example">
+        </div>
+      </section> -->
+    </main>
+  </body>
+</html>
