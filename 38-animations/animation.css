@@ -18,13 +18,13 @@ a {
 }
 
 a:hover {
-  transform: translate(500px -50%) rotate(2turn);
+  transform: translate(100px -50%) rotate(2turn);
 }
 
 .classic a {
   display: block;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   background-image: linear-gradient(red,pink, deeppink);
   clip-path: polygon(41% 29%, 70% 0%, 56% 49%, 100% 70%, 61% 71%, 30% 100%, 45% 53%, 0% 30%);
   transform: translate(200px, 50%) rotate(5turn);

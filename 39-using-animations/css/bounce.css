@@ -23,4 +23,19 @@
     50% -25px,
     50% 50%;
   background-repeat: no-repeat;;
+  animation-name: ball;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+ }
+
+@keyframes ball {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: calc(var(--ball-diameter) * 4);
+
+  }
 }
