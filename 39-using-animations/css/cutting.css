@@ -88,6 +88,10 @@
   height: 200px;
   width: 370px;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: scissors;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
 }
 
 #scissors-pivot {
@@ -110,6 +114,12 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 73%;
   transform: rotate(-15deg);
+  animation-name: scissors-top;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 7;
+
+
 }
 
 #blade-top {
@@ -126,6 +136,7 @@
   transform: rotate(-30deg);
 }
 
+
 #handle-bottom::after {
   top: calc(var(--handle-diameter) / 2);
   margin-block-start: calc(var(--handle-connect-thickness) / -2);
@@ -137,6 +148,10 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 27%;
   transform: rotate(15deg);
+  animation-name: scissors-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 7;
 }
 
 #blade-bottom {
@@ -147,6 +162,7 @@
   border-top-left-radius: 10px;
   border-block-start-width: 5px;
   z-index: 5;
+
 }
 
 #handle-top {
@@ -160,13 +176,32 @@
   margin-block-end: calc(var(--handle-connect-thickness) / -2);
 }
 
+@keyframes paper-cut {
+  0% {margin-block-end: 0;}
+  50% {transform: translate(300px, 50%) rotate(45deg);}
+  100% {transform: translate(300px,50%) rotate(45deg);}
+}
 #paper-cut {
   top: 49px;
   height: 150px;
   z-index: calc(var(--middle-z-index) - 1);
   transform-origin: 50% 100%;
   transform: translateZ(100px) rotateX(15deg);
+  animation-name: paper-cut;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
+
+ @keyframes paper-uncut {
+  0% {margin-block-start: 0;}
+  10% {transform: translate(-300px, 20%);}
+  20% {transform: translate(-300px, 40%);}
+  30% {transform: translate(-300px, 50%);}
+  50% {transform: translate(-300px, 60%) rotate(-45deg);}
+  100% {transform: translate(-300px,90%) rotate(-45deg);}
+}
+
 
 #paper-uncut {
   top: 199px;
@@ -175,6 +210,10 @@
   transform: translateZ(100px) rotateX(15deg);
   border-block-start: 1px dashed #ccc;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: paper-uncut;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 /* Debug setup */
@@ -186,3 +225,24 @@
 .debug {outline-color: blue;}
 .debug #scissor-top {outline-color: red;}
 .debug #scissor-bottom {outline-color: green;}
+
+@keyframes scissors {
+  0% {left: 0;}
+  30% {left: 300px;}
+  60% {left: 600px;}
+  80% {left: 700px;}
+  100% {left: 800px;}
+}
+
+@keyframes scissors-bottom {
+  0% {transform: rotateZ(0);}
+  50% {transform: rotateZ(20deg);}
+  100% {transform: rotateZ(0);}
+
+}
+@keyframes scissors-top {
+  0% {transform: rotateZ(0);}
+  50% {transform: rotateZ(-20deg);}
+  100% {transform: rotateZ(0);}
+}
+
