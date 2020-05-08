@@ -24,10 +24,10 @@
     50% 50%;
   background-repeat: no-repeat;;
   animation-name: ball;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
  }
 
 @keyframes ball {
@@ -36,6 +36,7 @@
   }
   100% {
     top: calc(var(--ball-diameter) * 4);
+    transform: scale(0.9, 11.5s );
 
   }
 }
