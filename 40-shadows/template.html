@@ -6,12 +6,39 @@
     <title>Document</title>
     <style>
       body {
+        display: block;
         width: 100vw;
         height: 50vh;
       }
 
-      .www p {
-        text-shadow: 10px, 10px, red;
+       .www > p {
+        display: block;
+        color: darkblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-block-start: 100px;
+        margin-inline-start: 500px;
+      }
+      .shadow1 {
+        background-image: linear-gradient(lightyellow, pink);
+        box-shadow: inset 0 20px 50px rgba(91, 58, 43, 0.7);
+        display: block;
+        border-style: none;
+        width: 200px;
+        height: 250px;
+        margin-block-start: 100px;
+        margin-inline-start: 500px;
+      }
+      .shadow1 p {
+        padding: 3rem;
+        font-family: sans-serif;
+        color: fuchsia;
+      }
+
+      .shadow1 > footer {
+        margin-top: 1rem;
+        padding-left: 2rem;
       }
 
     </style>
@@ -21,10 +48,13 @@
       <h1>Text-shadow and Box-shadow</h1>
     </header>
     <div>
-      <div class="www"></div>
-        <p>JESÚS ES MY PADRE!</p>
-      <div class="lll"></div>
-        <p><a href="/">a</a></p>
+      <div class="www">
+        <p>JESÚS ES MY PADRE!</p></div>
+      <div class="shadow1"><p>Es la gracia de Jesucristo lo que me ha soportado hoy.
+      </p>
+      <footer>Rosny</footer>
+    </div>
     </div>
   </body>
 </html>
+
