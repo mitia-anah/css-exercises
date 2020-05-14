@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Font-face researcher</h1>
+    </header>
+    <main>
+      <ol>
+        <li>There are several types of font formats:
+          <ul>
+            <li>WOFF</li>
+            <li>TTF</li>
+            <li>SVG</li>
+            <li>WOFF2</li>
+            <li>OTF</li>
+            <li>EOT</li>
+          </ul>
+        </li>
+        <li>The good candidat fontfile formats to use in all browsers is WOFF. </li>
+        <li>The font-face syntax is also different to other @-blocks.The differences between a <code>@font-face</code> block and <code>@keyframes / @media queries / @supports</code> blocks is @font-face has its source property, fonts.</li>
+        <li>Some fonts come with licencing restrictions, which means we can't use it for free but we have to pay to the invetor.</li>
+        <li>We need eight font-face blocks to provide if we want to support all the chosen fonts.</li>
+        <li> At roughly 20KB per font file, each of our users have to download 160kilobytes of fonts</li>
+        <li>
+         If we chose to offer WOFF2 as well as WOFF, would we use the <code>(...)format(...),</code> syntax. We would have 16 files, according to question 5.</li>
+        <li>Most of our users would probably have the exact font we want to serve already installed on their devices. To make sure that the user's browser doesn't download the fonts they might already have, we use the local()/system.</li>
+        <li>Sometimes we have to assign fallback fonts for our custom webfonts we add via `@font-face`. We should keep in mind that when it comes to selecting the fallback, everyone of the fallback font should have the same character.</li>
+        <li>The browser can use one of several strategies for loading the fonts, e.g. showing nothing until the font is downloaded, or using a fallback font first. <code>Font-display: swap</code> is property that we can use to help the browser decide on which strategy to use.</li>
+      </ol>
+    </main>
+
+  </body>
+</html>
