@@ -1,0 +1,23 @@
+:root {
+  --primary-colour: #00c;
+  --secondary-colour: #555;
+  --inverse-colour: #fff;
+  --container-max-width: 40rem;
+  --nav-font-size: 1rem;
+  --nav-tab-vertical-padding: 0.75rem;
+  --nav-tab-horizontal-padding: 1.25rem;
+  --nav-tab-gap: 0.25rem;
+  --nav-tab-radius-amount: 0.5rem;
+  --nav-active-font-size: 1.25rem;
+  --nav-active-tab-vertical-padding: 1rem;
+  --nav-active-tab-horizontal-padding: 2rem;
+  --article-padding: 1rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
