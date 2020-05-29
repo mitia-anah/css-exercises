@@ -24,7 +24,7 @@ body {
 
 
 
-.heading {
+.navigation {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -35,24 +35,24 @@ body {
   padding-inline-start: 0;
 }
 
-.heading_page__home {
+.navigation__list_item_home {
   background-color: var(--secondary-colour);
 }
-.heading_pircing__active {
+.navigation_pircing__active {
   background-color: var(--primary-colour);
 
 }
-.heading_page__about {
+.navigation__list_item_about {
   background-color: var(--secondary-colour);
 }
-.heading_page__contact {
+.navigation__list_item_contact {
   background-color: var(--secondary-colour);
 }
-.heading_page__help{
+.navigation__list_item_help{
   background-color: var(--secondary-colour);
 
 }
-.heading_page__help a {
+.navigation__list_item_help a {
   color: var(--inverse-colour);
   text-decoration: none;
 }
@@ -75,9 +75,10 @@ body {
 
 }
 
-a {
+.navigation__link {
   padding-inline-start: var(--nav-tab-horizontal-padding);
   padding-inline-end: var(--nav-tab-horizontal-padding);
+  padding-block-start: var(--nav-tab-vertical-padding)
 }
 
 
