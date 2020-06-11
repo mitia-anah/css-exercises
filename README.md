@@ -54,3 +54,4 @@ A list of practical exercises to use as we learn CSS.
 - [41: Font face](41-font-face/index.md)
 - [42: All the small things](42-all-the-small-thigs/index.md)
 - [43: CSS Methodologies](43-methodologies/index.md)
+- [44: Pattern thinking](44-pattern-thinking/index.md)

@@ -1,0 +1,30 @@
+/* Set up */
+.button {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: rgb(191,0,0);
+  color: rgb(255,255,255);
+  border-radius: 0.5rem;
+}
+
+/* 10 */
+[data-example="10"] {
+
+}
+
+/* 11 */
+[data-example="11"] {
+
+}
+
+/* 12 */
+[data-example="12"] {
+
+}

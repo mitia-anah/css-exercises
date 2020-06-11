@@ -1,0 +1,53 @@
+:root {
+  --article-bg-transparency: 0.5;
+}
+
+/* Setup */
+.example > article {
+  font-weight: 700;
+  text-align: center;
+}
+
+.example > article > * {
+  background-color: rgba(var(--article-elem-color), var(--article-bg-transparency));
+  color: #fff;
+  padding: 1rem;
+}
+
+.example > article > * * {
+  margin: 0;
+  background-color: inherit;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.example > article > header {
+  --article-elem-color: 63, 63, 191;
+}
+
+.example > article > header > h2 {
+  font-size: 1rem;
+}
+
+.example > article > .content {
+  --article-elem-color: 63, 191, 63;
+}
+
+.example > article > footer {
+  --article-elem-color: 191, 63, 63;
+}
+
+/* 1 */
+[data-example="1"] {
+
+}
+
+/* 2 */
+[data-example="2"] {
+
+}
+
+/* 3 */
+[data-example="3"] {
+
+}
