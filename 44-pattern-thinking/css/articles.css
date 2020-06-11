@@ -38,16 +38,40 @@
 }
 
 /* 1 */
+[data-example="3"],
+[data-example="2"],
 [data-example="1"] {
-
+  border-width: 1rem;
+  border-color: black;
 }
 
-/* 2 */
-[data-example="2"] {
+[data-example="1"] header,
+[data-example="1"] div,
+[data-example="1"] footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+
+/* 2 */
+[data-example="2"] h2,
+[data-example="2"] p {
+  display: inline-block;
 }
 
 /* 3 */
-[data-example="3"] {
+[data-example="3"] h2,
+[data-example="3"] p {
+  display: inline-block;
+   max-width: max-content;
+   align-self: center;
+}
 
+div div header,
+  div div div {
+  margin-block-end: 1rem;
+  }
+.example {
+  padding: 0;
 }
