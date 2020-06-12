@@ -57,15 +57,15 @@
 /* 2 */
 [data-example="2"] h2,
 [data-example="2"] p {
-  display: inline-block;
+  display: inline-grid;
 }
 
 /* 3 */
 [data-example="3"] h2,
 [data-example="3"] p {
   display: inline-block;
-   max-width: max-content;
-   align-self: center;
+  max-width: max-content;
+  align-self: center;
 }
 
 div div header,
